@@ -1,0 +1,1201 @@
+enquiry_id,date,channel,enquiry_type,response_time_hours,agent_id,property_id,converted
+ENQ-00001,2025-09-13,Email,Availability Check,3.3,Agent_12,RK-0150,True
+ENQ-00002,2024-02-05,Phone,Design Consultation,1.5,Agent_36,RK-0440,False
+ENQ-00003,2024-06-12,WhatsApp,Availability Check,0.9,Agent_45,RK-0123,True
+ENQ-00004,2025-03-27,Email,Viewing Request,4.7,Agent_14,RK-0198,False
+ENQ-00005,2024-12-02,WhatsApp,Availability Check,1.3,Agent_32,RK-0015,True
+ENQ-00006,2025-11-11,Contact Form,Pricing Question,3.1,Agent_27,RK-0372,False
+ENQ-00007,2024-07-24,Email,Viewing Request,10.0,Agent_17,RK-0476,False
+ENQ-00008,2024-07-08,Contact Form,General Enquiry,25.3,Agent_35,RK-0133,False
+ENQ-00009,2024-11-21,WhatsApp,Pricing Question,3.3,Agent_05,RK-0219,False
+ENQ-00010,2024-09-03,Contact Form,Viewing Request,1.0,Agent_39,RK-0495,False
+ENQ-00011,2024-02-23,Phone,Complaint,0.9,Agent_01,RK-0383,False
+ENQ-00012,2024-04-20,Email,Pricing Question,15.7,Agent_08,RK-0029,False
+ENQ-00013,2025-11-03,WhatsApp,Viewing Request,2.6,Agent_12,RK-0212,False
+ENQ-00014,2024-03-13,WhatsApp,Pricing Question,15.7,Agent_27,RK-0173,False
+ENQ-00015,2024-07-06,WhatsApp,Pricing Question,2.0,Agent_45,RK-0342,False
+ENQ-00016,2024-07-18,Phone,Viewing Request,0.7,Agent_43,RK-0077,False
+ENQ-00017,2024-01-20,WhatsApp,General Enquiry,11.1,Agent_15,RK-0479,True
+ENQ-00018,2025-10-27,Email,General Enquiry,5.9,Agent_19,RK-0448,False
+ENQ-00019,2025-01-03,WhatsApp,General Enquiry,5.0,Agent_47,RK-0376,True
+ENQ-00020,2024-12-24,Contact Form,Viewing Request,9.7,Agent_46,RK-0140,False
+ENQ-00021,2025-09-20,Contact Form,Design Consultation,20.6,Agent_13,RK-0089,False
+ENQ-00022,2025-07-19,Email,Availability Check,4.0,Agent_49,RK-0007,False
+ENQ-00023,2025-06-06,Contact Form,Availability Check,12.5,Agent_50,RK-0028,False
+ENQ-00024,2024-11-08,Contact Form,Viewing Request,3.3,Agent_36,RK-0270,False
+ENQ-00025,2024-12-13,Phone,Pricing Question,0.4,Agent_29,RK-0173,True
+ENQ-00026,2024-08-04,Contact Form,Pricing Question,8.6,Agent_38,RK-0320,False
+ENQ-00027,2025-05-04,WhatsApp,Viewing Request,0.7,Agent_10,RK-0138,False
+ENQ-00028,2025-05-10,Contact Form,Pricing Question,3.3,Agent_01,RK-0236,False
+ENQ-00029,2025-05-30,WhatsApp,Viewing Request,0.5,Agent_01,RK-0071,False
+ENQ-00030,2025-04-01,Email,Viewing Request,2.3,Agent_36,RK-0434,False
+ENQ-00031,2024-10-09,Contact Form,Viewing Request,1.5,Agent_29,RK-0016,False
+ENQ-00032,2024-07-05,Contact Form,Availability Check,5.9,Agent_46,RK-0474,False
+ENQ-00033,2025-05-03,WhatsApp,Viewing Request,1.9,Agent_44,RK-0268,False
+ENQ-00034,2025-06-13,Email,Viewing Request,9.1,Agent_26,RK-0087,False
+ENQ-00035,2025-01-24,WhatsApp,Viewing Request,1.6,Agent_37,RK-0402,False
+ENQ-00036,2024-12-22,Email,General Enquiry,1.3,Agent_12,RK-0118,False
+ENQ-00037,2025-02-26,Phone,Viewing Request,1.7,Agent_33,RK-0235,True
+ENQ-00038,2024-09-27,WhatsApp,Viewing Request,0.5,Agent_18,RK-0259,False
+ENQ-00039,2025-12-22,Contact Form,Viewing Request,4.7,Agent_31,RK-0378,False
+ENQ-00040,2025-12-22,Email,Availability Check,1.0,Agent_02,RK-0172,False
+ENQ-00041,2025-03-01,WhatsApp,Availability Check,1.6,Agent_16,RK-0351,False
+ENQ-00042,2025-02-15,Contact Form,Viewing Request,5.2,Agent_45,RK-0150,True
+ENQ-00043,2025-12-27,WhatsApp,Viewing Request,5.4,Agent_39,RK-0378,True
+ENQ-00044,2024-05-02,Email,Viewing Request,1.8,Agent_15,RK-0035,True
+ENQ-00045,2025-09-14,Phone,Complaint,2.2,Agent_08,RK-0122,True
+ENQ-00046,2025-11-21,Email,Viewing Request,6.8,Agent_13,RK-0195,False
+ENQ-00047,2024-11-29,Phone,Viewing Request,0.1,Agent_38,RK-0226,False
+ENQ-00048,2025-02-11,Contact Form,Pricing Question,3.2,Agent_16,RK-0110,False
+ENQ-00049,2025-01-03,Email,Viewing Request,1.1,Agent_26,RK-0494,False
+ENQ-00050,2025-02-23,Contact Form,Complaint,9.2,Agent_43,RK-0025,True
+ENQ-00051,2024-05-20,Email,Viewing Request,8.9,Agent_28,RK-0179,False
+ENQ-00052,2025-11-02,Contact Form,Pricing Question,1.0,Agent_33,RK-0068,False
+ENQ-00053,2024-11-18,Phone,Availability Check,3.3,Agent_39,RK-0094,False
+ENQ-00054,2025-12-09,Email,Viewing Request,12.8,Agent_02,RK-0458,False
+ENQ-00055,2025-01-04,Email,Design Consultation,4.6,Agent_47,RK-0249,False
+ENQ-00056,2024-05-26,Phone,Viewing Request,2.1,Agent_45,RK-0428,False
+ENQ-00057,2025-12-05,Contact Form,Complaint,1.6,Agent_19,RK-0338,False
+ENQ-00058,2025-11-29,Contact Form,Availability Check,1.0,Agent_49,RK-0037,False
+ENQ-00059,2025-09-01,WhatsApp,Pricing Question,3.4,Agent_23,RK-0310,True
+ENQ-00060,2025-06-23,WhatsApp,Pricing Question,0.5,Agent_44,RK-0439,False
+ENQ-00061,2024-03-25,Contact Form,Viewing Request,4.2,Agent_06,RK-0151,False
+ENQ-00062,2024-12-08,Contact Form,Pricing Question,3.5,Agent_43,RK-0146,False
+ENQ-00063,2024-08-12,WhatsApp,Viewing Request,1.1,Agent_44,RK-0466,True
+ENQ-00064,2024-10-29,Email,Pricing Question,12.1,Agent_20,RK-0347,False
+ENQ-00065,2025-10-10,WhatsApp,Pricing Question,0.7,Agent_40,RK-0112,True
+ENQ-00066,2024-06-25,Email,Viewing Request,4.3,Agent_17,RK-0028,False
+ENQ-00067,2025-06-20,Email,Pricing Question,19.1,Agent_38,RK-0390,True
+ENQ-00068,2025-10-15,Email,Viewing Request,6.8,Agent_33,RK-0152,True
+ENQ-00069,2024-08-28,Contact Form,Viewing Request,2.3,Agent_01,RK-0484,False
+ENQ-00070,2025-05-22,Email,Availability Check,3.0,Agent_29,RK-0403,False
+ENQ-00071,2024-01-25,WhatsApp,General Enquiry,2.5,Agent_19,RK-0481,False
+ENQ-00072,2025-03-14,Contact Form,Pricing Question,7.2,Agent_21,RK-0122,True
+ENQ-00073,2024-02-17,Email,Design Consultation,11.9,Agent_18,RK-0444,True
+ENQ-00074,2025-01-15,WhatsApp,Viewing Request,3.1,Agent_09,RK-0109,False
+ENQ-00075,2025-01-22,Email,Pricing Question,6.5,Agent_05,RK-0247,False
+ENQ-00076,2024-03-19,WhatsApp,Availability Check,8.1,Agent_42,RK-0109,False
+ENQ-00077,2024-04-04,Email,Availability Check,3.1,Agent_09,RK-0478,False
+ENQ-00078,2025-09-02,Phone,Viewing Request,0.2,Agent_13,RK-0268,False
+ENQ-00079,2025-05-22,WhatsApp,Design Consultation,1.1,Agent_23,RK-0103,False
+ENQ-00080,2025-05-01,Email,Pricing Question,3.7,Agent_05,RK-0223,False
+ENQ-00081,2025-03-09,Email,Viewing Request,1.6,Agent_25,RK-0013,False
+ENQ-00082,2024-04-15,WhatsApp,Pricing Question,0.5,Agent_11,RK-0374,False
+ENQ-00083,2024-11-20,Email,Pricing Question,2.5,Agent_47,RK-0318,False
+ENQ-00084,2024-08-03,WhatsApp,Design Consultation,1.2,Agent_35,RK-0183,True
+ENQ-00085,2025-04-11,Phone,Pricing Question,0.4,Agent_25,RK-0144,False
+ENQ-00086,2024-08-19,WhatsApp,Viewing Request,2.7,Agent_19,RK-0042,False
+ENQ-00087,2024-06-21,Phone,General Enquiry,1.4,Agent_25,RK-0006,False
+ENQ-00088,2024-08-02,Phone,Pricing Question,0.1,Agent_46,RK-0152,False
+ENQ-00089,2025-01-17,Email,Pricing Question,13.0,Agent_38,RK-0189,True
+ENQ-00090,2025-08-24,Email,Availability Check,2.1,Agent_08,RK-0179,False
+ENQ-00091,2025-12-26,Phone,Viewing Request,1.2,Agent_08,RK-0312,False
+ENQ-00092,2024-02-04,Phone,Viewing Request,0.1,Agent_27,RK-0001,False
+ENQ-00093,2024-08-17,Email,Viewing Request,13.7,Agent_42,RK-0373,False
+ENQ-00094,2025-07-28,WhatsApp,Availability Check,2.8,Agent_35,RK-0432,False
+ENQ-00095,2024-08-11,Phone,General Enquiry,0.5,Agent_14,RK-0447,False
+ENQ-00096,2024-11-12,Contact Form,General Enquiry,10.3,Agent_23,RK-0338,False
+ENQ-00097,2025-12-18,Email,Viewing Request,3.4,Agent_50,RK-0292,False
+ENQ-00098,2025-08-13,Email,General Enquiry,2.8,Agent_24,RK-0488,False
+ENQ-00099,2024-09-12,Email,Availability Check,29.8,Agent_15,RK-0236,False
+ENQ-00100,2024-12-14,Contact Form,Pricing Question,17.0,Agent_31,RK-0192,False
+ENQ-00101,2025-07-03,Email,Pricing Question,5.1,Agent_37,RK-0462,False
+ENQ-00102,2024-04-03,Contact Form,Pricing Question,12.3,Agent_35,RK-0485,False
+ENQ-00103,2025-09-25,WhatsApp,Viewing Request,1.0,Agent_02,RK-0132,False
+ENQ-00104,2025-04-26,WhatsApp,Pricing Question,5.6,Agent_05,RK-0148,True
+ENQ-00105,2025-09-08,Contact Form,Pricing Question,15.8,Agent_02,RK-0265,False
+ENQ-00106,2024-12-07,WhatsApp,Design Consultation,0.6,Agent_38,RK-0251,True
+ENQ-00107,2025-06-13,WhatsApp,Viewing Request,3.7,Agent_04,RK-0260,False
+ENQ-00108,2024-10-09,Contact Form,Availability Check,10.1,Agent_41,RK-0439,True
+ENQ-00109,2025-08-04,Email,Viewing Request,11.1,Agent_24,RK-0056,False
+ENQ-00110,2025-03-15,WhatsApp,Pricing Question,1.8,Agent_39,RK-0189,False
+ENQ-00111,2024-03-19,WhatsApp,Availability Check,0.5,Agent_34,RK-0314,True
+ENQ-00112,2024-03-11,Contact Form,Complaint,11.2,Agent_22,RK-0193,False
+ENQ-00113,2024-02-21,Phone,Viewing Request,0.8,Agent_09,RK-0251,False
+ENQ-00114,2024-10-24,Email,General Enquiry,3.3,Agent_24,RK-0411,True
+ENQ-00115,2024-03-05,Phone,Viewing Request,0.8,Agent_07,RK-0083,False
+ENQ-00116,2025-11-27,Email,Pricing Question,3.8,Agent_22,RK-0459,False
+ENQ-00117,2025-02-16,WhatsApp,Availability Check,5.5,Agent_30,RK-0112,False
+ENQ-00118,2024-05-01,Email,Pricing Question,1.4,Agent_46,RK-0440,True
+ENQ-00119,2025-07-21,Email,Pricing Question,1.0,Agent_50,RK-0381,True
+ENQ-00120,2025-04-21,Email,Viewing Request,5.2,Agent_21,RK-0437,True
+ENQ-00121,2024-03-01,Contact Form,Viewing Request,1.0,Agent_36,RK-0074,False
+ENQ-00122,2024-09-29,WhatsApp,General Enquiry,0.7,Agent_07,RK-0108,False
+ENQ-00123,2025-03-27,WhatsApp,Pricing Question,2.7,Agent_02,RK-0010,False
+ENQ-00124,2024-03-21,Contact Form,Design Consultation,10.8,Agent_20,RK-0129,False
+ENQ-00125,2025-05-15,Contact Form,Design Consultation,2.0,Agent_33,RK-0279,False
+ENQ-00126,2025-04-05,Phone,Complaint,0.4,Agent_15,RK-0036,False
+ENQ-00127,2025-12-04,Email,Design Consultation,5.6,Agent_33,RK-0336,False
+ENQ-00128,2025-09-22,Contact Form,Pricing Question,11.7,Agent_03,RK-0343,False
+ENQ-00129,2025-08-31,Phone,General Enquiry,2.2,Agent_32,RK-0287,False
+ENQ-00130,2025-09-08,Email,Pricing Question,8.1,Agent_39,RK-0010,True
+ENQ-00131,2024-08-13,WhatsApp,Availability Check,0.8,Agent_33,RK-0074,False
+ENQ-00132,2025-11-12,Contact Form,General Enquiry,7.1,Agent_32,RK-0015,False
+ENQ-00133,2024-10-10,Email,Pricing Question,12.9,Agent_02,RK-0127,True
+ENQ-00134,2024-07-17,Contact Form,Viewing Request,4.3,Agent_26,RK-0481,False
+ENQ-00135,2025-06-20,WhatsApp,Viewing Request,1.5,Agent_45,RK-0344,True
+ENQ-00136,2024-04-29,Contact Form,Viewing Request,15.1,Agent_32,RK-0377,False
+ENQ-00137,2025-10-10,Email,Viewing Request,6.8,Agent_30,RK-0168,False
+ENQ-00138,2024-12-06,Contact Form,General Enquiry,6.5,Agent_45,RK-0401,False
+ENQ-00139,2025-05-10,Email,Availability Check,1.8,Agent_14,RK-0433,True
+ENQ-00140,2024-05-11,Phone,Design Consultation,0.9,Agent_43,RK-0108,True
+ENQ-00141,2024-03-19,Contact Form,Viewing Request,16.5,Agent_26,RK-0436,False
+ENQ-00142,2024-06-02,Email,Complaint,4.7,Agent_03,RK-0450,False
+ENQ-00143,2024-09-29,Email,Pricing Question,3.0,Agent_03,RK-0363,False
+ENQ-00144,2025-10-27,Contact Form,Design Consultation,22.6,Agent_07,RK-0046,False
+ENQ-00145,2025-02-11,WhatsApp,Pricing Question,0.5,Agent_10,RK-0118,False
+ENQ-00146,2025-03-17,Contact Form,Pricing Question,7.7,Agent_20,RK-0336,False
+ENQ-00147,2024-11-29,Contact Form,Viewing Request,2.8,Agent_26,RK-0121,False
+ENQ-00148,2025-07-28,Email,Availability Check,4.0,Agent_02,RK-0398,False
+ENQ-00149,2025-07-14,Phone,Availability Check,1.2,Agent_24,RK-0382,False
+ENQ-00150,2024-10-08,Contact Form,Pricing Question,1.0,Agent_42,RK-0457,False
+ENQ-00151,2024-07-23,WhatsApp,General Enquiry,2.4,Agent_20,RK-0276,False
+ENQ-00152,2024-07-01,WhatsApp,Design Consultation,11.1,Agent_16,RK-0339,False
+ENQ-00153,2025-05-23,Contact Form,Pricing Question,1.6,Agent_18,RK-0012,False
+ENQ-00154,2024-09-02,Contact Form,Pricing Question,5.1,Agent_48,RK-0019,False
+ENQ-00155,2024-06-03,Phone,Viewing Request,0.4,Agent_05,RK-0011,False
+ENQ-00156,2025-01-21,Email,Design Consultation,6.1,Agent_15,RK-0387,False
+ENQ-00157,2025-06-12,Contact Form,Design Consultation,14.5,Agent_38,RK-0328,False
+ENQ-00158,2025-06-30,Email,Viewing Request,9.5,Agent_38,RK-0364,True
+ENQ-00159,2025-06-29,Email,Design Consultation,1.0,Agent_31,RK-0371,False
+ENQ-00160,2025-05-30,Email,Design Consultation,10.0,Agent_04,RK-0338,False
+ENQ-00161,2025-10-03,Email,Design Consultation,1.6,Agent_11,RK-0447,True
+ENQ-00162,2025-10-13,Contact Form,Availability Check,3.3,Agent_36,RK-0010,False
+ENQ-00163,2024-04-21,Email,Viewing Request,4.6,Agent_14,RK-0240,False
+ENQ-00164,2025-10-22,Email,Viewing Request,17.9,Agent_23,RK-0135,False
+ENQ-00165,2025-02-13,WhatsApp,Viewing Request,1.9,Agent_44,RK-0330,False
+ENQ-00166,2025-01-12,Email,Availability Check,1.0,Agent_10,RK-0120,False
+ENQ-00167,2024-09-04,Email,Viewing Request,4.9,Agent_33,RK-0443,False
+ENQ-00168,2024-12-17,WhatsApp,Viewing Request,0.9,Agent_42,RK-0032,False
+ENQ-00169,2024-01-25,Email,Viewing Request,1.0,Agent_23,RK-0477,False
+ENQ-00170,2025-03-30,Contact Form,General Enquiry,2.4,Agent_33,RK-0229,True
+ENQ-00171,2025-03-10,Contact Form,Availability Check,3.2,Agent_24,RK-0072,True
+ENQ-00172,2025-11-14,Email,Pricing Question,40.0,Agent_02,RK-0186,False
+ENQ-00173,2024-06-09,WhatsApp,Design Consultation,1.0,Agent_19,RK-0210,False
+ENQ-00174,2024-10-01,Email,Viewing Request,1.5,Agent_12,RK-0280,False
+ENQ-00175,2025-06-13,Phone,Availability Check,0.8,Agent_13,RK-0339,False
+ENQ-00176,2024-03-30,Contact Form,Viewing Request,11.1,Agent_02,RK-0459,False
+ENQ-00177,2025-08-16,Contact Form,Availability Check,1.0,Agent_37,RK-0391,False
+ENQ-00178,2024-03-28,Email,Viewing Request,11.0,Agent_09,RK-0032,False
+ENQ-00179,2025-01-31,WhatsApp,General Enquiry,2.9,Agent_46,RK-0178,False
+ENQ-00180,2025-09-30,WhatsApp,Pricing Question,1.1,Agent_15,RK-0240,False
+ENQ-00181,2025-12-10,Contact Form,Viewing Request,7.7,Agent_37,RK-0151,False
+ENQ-00182,2025-05-10,Email,Pricing Question,15.0,Agent_13,RK-0151,False
+ENQ-00183,2024-07-07,Phone,General Enquiry,1.7,Agent_42,RK-0409,True
+ENQ-00184,2025-08-24,WhatsApp,General Enquiry,0.5,Agent_12,RK-0325,False
+ENQ-00185,2025-11-24,WhatsApp,Viewing Request,11.3,Agent_34,RK-0333,False
+ENQ-00186,2024-12-30,WhatsApp,Pricing Question,8.4,Agent_04,RK-0181,False
+ENQ-00187,2025-07-21,WhatsApp,General Enquiry,18.0,Agent_43,RK-0377,False
+ENQ-00188,2025-02-02,Email,Pricing Question,2.7,Agent_12,RK-0004,False
+ENQ-00189,2024-10-07,Contact Form,Viewing Request,7.9,Agent_09,RK-0061,False
+ENQ-00190,2025-05-24,Email,Pricing Question,11.3,Agent_04,RK-0349,False
+ENQ-00191,2025-03-04,Email,Viewing Request,20.6,Agent_05,RK-0354,False
+ENQ-00192,2024-06-15,WhatsApp,Viewing Request,9.2,Agent_24,RK-0419,False
+ENQ-00193,2024-03-30,Contact Form,Availability Check,4.3,Agent_49,RK-0059,False
+ENQ-00194,2024-07-17,Email,General Enquiry,1.1,Agent_31,RK-0239,False
+ENQ-00195,2024-06-16,Email,Availability Check,15.6,Agent_49,RK-0380,False
+ENQ-00196,2025-11-27,WhatsApp,General Enquiry,1.8,Agent_30,RK-0492,False
+ENQ-00197,2025-12-07,WhatsApp,Viewing Request,6.0,Agent_49,RK-0076,False
+ENQ-00198,2025-12-08,Phone,Viewing Request,1.8,Agent_20,RK-0207,False
+ENQ-00199,2025-06-11,Contact Form,Viewing Request,5.1,Agent_13,RK-0403,False
+ENQ-00200,2025-02-05,Email,Availability Check,10.1,Agent_19,RK-0365,False
+ENQ-00201,2025-03-03,Email,Pricing Question,13.7,Agent_10,RK-0480,False
+ENQ-00202,2024-08-18,Phone,Pricing Question,1.2,Agent_21,RK-0392,True
+ENQ-00203,2024-03-18,Email,Viewing Request,1.0,Agent_05,RK-0058,True
+ENQ-00204,2025-04-23,Contact Form,General Enquiry,4.9,Agent_19,RK-0484,False
+ENQ-00205,2025-10-14,WhatsApp,General Enquiry,1.7,Agent_49,RK-0292,False
+ENQ-00206,2024-09-22,Contact Form,General Enquiry,12.3,Agent_27,RK-0021,False
+ENQ-00207,2024-03-20,Phone,Availability Check,0.6,Agent_25,RK-0156,False
+ENQ-00208,2025-06-13,Email,Complaint,13.9,Agent_33,RK-0193,False
+ENQ-00209,2025-03-01,Contact Form,Viewing Request,1.3,Agent_45,RK-0486,True
+ENQ-00210,2025-03-11,Email,General Enquiry,5.1,Agent_48,RK-0471,False
+ENQ-00211,2025-01-07,Contact Form,General Enquiry,1.0,Agent_02,RK-0275,False
+ENQ-00212,2024-04-27,Email,Complaint,6.2,Agent_17,RK-0283,False
+ENQ-00213,2025-07-28,WhatsApp,Design Consultation,0.7,Agent_18,RK-0373,False
+ENQ-00214,2024-03-21,Phone,Viewing Request,0.1,Agent_25,RK-0197,True
+ENQ-00215,2024-07-14,WhatsApp,Viewing Request,2.4,Agent_14,RK-0325,False
+ENQ-00216,2024-02-26,WhatsApp,Viewing Request,5.7,Agent_11,RK-0099,True
+ENQ-00217,2025-10-02,Email,Pricing Question,12.2,Agent_24,RK-0188,False
+ENQ-00218,2025-12-26,WhatsApp,Pricing Question,3.7,Agent_21,RK-0433,False
+ENQ-00219,2025-06-05,Email,Viewing Request,8.4,Agent_22,RK-0146,False
+ENQ-00220,2024-01-27,WhatsApp,Availability Check,6.2,Agent_18,RK-0428,False
+ENQ-00221,2025-04-23,WhatsApp,Pricing Question,0.5,Agent_38,RK-0443,False
+ENQ-00222,2025-12-13,Email,Complaint,25.4,Agent_05,RK-0398,False
+ENQ-00223,2024-01-04,WhatsApp,Pricing Question,6.6,Agent_02,RK-0235,False
+ENQ-00224,2024-06-07,Email,Design Consultation,1.0,Agent_04,RK-0463,False
+ENQ-00225,2024-01-01,WhatsApp,Viewing Request,8.9,Agent_44,RK-0178,True
+ENQ-00226,2025-01-14,Phone,Pricing Question,0.6,Agent_30,RK-0108,False
+ENQ-00227,2024-07-14,Contact Form,Viewing Request,15.2,Agent_39,RK-0119,True
+ENQ-00228,2025-05-12,Contact Form,Design Consultation,1.9,Agent_44,RK-0271,True
+ENQ-00229,2025-11-20,Contact Form,Pricing Question,22.2,Agent_22,RK-0074,True
+ENQ-00230,2025-05-23,Email,Pricing Question,7.7,Agent_02,RK-0004,True
+ENQ-00231,2025-08-22,Email,Viewing Request,4.2,Agent_10,RK-0393,False
+ENQ-00232,2025-12-23,Email,General Enquiry,16.4,Agent_35,RK-0259,False
+ENQ-00233,2024-06-16,WhatsApp,Pricing Question,0.9,Agent_25,RK-0296,True
+ENQ-00234,2024-05-20,Contact Form,Availability Check,3.0,Agent_35,RK-0337,False
+ENQ-00235,2025-08-11,Contact Form,Pricing Question,9.5,Agent_26,RK-0022,False
+ENQ-00236,2025-03-14,Phone,General Enquiry,4.1,Agent_05,RK-0084,False
+ENQ-00237,2024-01-13,Email,Availability Check,7.5,Agent_10,RK-0353,False
+ENQ-00238,2024-12-01,Contact Form,Viewing Request,2.4,Agent_26,RK-0011,False
+ENQ-00239,2024-04-26,Contact Form,Availability Check,5.9,Agent_08,RK-0031,False
+ENQ-00240,2024-03-06,Phone,Viewing Request,1.1,Agent_34,RK-0434,False
+ENQ-00241,2025-01-30,Email,General Enquiry,16.2,Agent_23,RK-0091,False
+ENQ-00242,2024-06-14,WhatsApp,Design Consultation,0.5,Agent_49,RK-0349,False
+ENQ-00243,2024-02-18,WhatsApp,Pricing Question,2.3,Agent_39,RK-0274,False
+ENQ-00244,2025-01-07,Phone,Pricing Question,0.4,Agent_15,RK-0170,False
+ENQ-00245,2024-10-26,WhatsApp,Viewing Request,0.5,Agent_35,RK-0098,False
+ENQ-00246,2024-12-15,WhatsApp,Viewing Request,7.2,Agent_28,RK-0181,True
+ENQ-00247,2025-10-21,WhatsApp,Viewing Request,0.5,Agent_27,RK-0410,False
+ENQ-00248,2025-03-01,Phone,Viewing Request,0.5,Agent_28,RK-0226,False
+ENQ-00249,2024-08-11,WhatsApp,Viewing Request,4.0,Agent_29,RK-0182,False
+ENQ-00250,2024-06-27,Contact Form,Pricing Question,12.5,Agent_29,RK-0372,False
+ENQ-00251,2025-03-17,Email,Viewing Request,4.2,Agent_38,RK-0046,True
+ENQ-00252,2024-06-12,WhatsApp,Availability Check,3.1,Agent_35,RK-0291,False
+ENQ-00253,2025-09-06,WhatsApp,Design Consultation,2.7,Agent_02,RK-0210,True
+ENQ-00254,2025-05-23,Contact Form,Viewing Request,4.5,Agent_38,RK-0189,False
+ENQ-00255,2024-04-23,Email,Availability Check,1.0,Agent_06,RK-0496,False
+ENQ-00256,2025-01-23,Contact Form,Availability Check,8.7,Agent_38,RK-0255,False
+ENQ-00257,2025-08-06,Email,Availability Check,1.0,Agent_16,RK-0421,True
+ENQ-00258,2024-02-16,Phone,Pricing Question,0.6,Agent_21,RK-0322,False
+ENQ-00259,2025-11-08,Contact Form,Availability Check,1.2,Agent_25,RK-0395,False
+ENQ-00260,2025-08-31,Contact Form,Viewing Request,1.0,Agent_21,RK-0448,False
+ENQ-00261,2024-09-20,WhatsApp,Pricing Question,1.3,Agent_48,RK-0265,True
+ENQ-00262,2025-10-27,WhatsApp,Design Consultation,6.1,Agent_45,RK-0374,False
+ENQ-00263,2025-02-10,Contact Form,Viewing Request,6.0,Agent_48,RK-0166,False
+ENQ-00264,2025-01-07,Email,Pricing Question,7.3,Agent_24,RK-0461,True
+ENQ-00265,2024-08-07,WhatsApp,Availability Check,6.7,Agent_42,RK-0164,False
+ENQ-00266,2024-02-27,Email,Availability Check,15.6,Agent_01,RK-0087,False
+ENQ-00267,2025-10-26,Email,General Enquiry,6.9,Agent_06,RK-0053,False
+ENQ-00268,2025-05-20,WhatsApp,General Enquiry,3.4,Agent_20,RK-0103,False
+ENQ-00269,2024-07-30,WhatsApp,Pricing Question,9.5,Agent_45,RK-0478,False
+ENQ-00270,2024-02-15,WhatsApp,Viewing Request,2.9,Agent_45,RK-0410,False
+ENQ-00271,2025-06-19,Email,Design Consultation,5.6,Agent_16,RK-0488,True
+ENQ-00272,2024-08-30,Email,Viewing Request,9.2,Agent_11,RK-0193,False
+ENQ-00273,2024-04-24,Phone,General Enquiry,0.2,Agent_11,RK-0466,False
+ENQ-00274,2024-10-23,Contact Form,Availability Check,2.3,Agent_03,RK-0204,False
+ENQ-00275,2025-06-21,Email,General Enquiry,1.8,Agent_07,RK-0416,False
+ENQ-00276,2025-05-12,WhatsApp,Viewing Request,2.2,Agent_35,RK-0112,False
+ENQ-00277,2024-02-05,Email,Viewing Request,4.4,Agent_01,RK-0325,True
+ENQ-00278,2025-06-17,Contact Form,Design Consultation,14.7,Agent_36,RK-0164,True
+ENQ-00279,2025-11-22,WhatsApp,Pricing Question,3.2,Agent_22,RK-0066,False
+ENQ-00280,2025-01-18,Email,Viewing Request,1.0,Agent_26,RK-0085,False
+ENQ-00281,2024-07-06,Contact Form,General Enquiry,38.3,Agent_37,RK-0002,False
+ENQ-00282,2024-08-25,Contact Form,Availability Check,2.1,Agent_47,RK-0435,False
+ENQ-00283,2024-10-23,WhatsApp,General Enquiry,1.4,Agent_12,RK-0029,False
+ENQ-00284,2024-01-12,Email,Design Consultation,22.0,Agent_10,RK-0171,False
+ENQ-00285,2024-12-27,WhatsApp,Viewing Request,0.5,Agent_09,RK-0062,False
+ENQ-00286,2024-04-23,WhatsApp,Viewing Request,3.8,Agent_29,RK-0335,False
+ENQ-00287,2024-03-22,Contact Form,Viewing Request,18.3,Agent_11,RK-0270,False
+ENQ-00288,2025-09-17,Contact Form,Viewing Request,1.0,Agent_18,RK-0442,False
+ENQ-00289,2025-07-23,Email,General Enquiry,1.0,Agent_14,RK-0353,False
+ENQ-00290,2025-06-03,Contact Form,Design Consultation,1.2,Agent_31,RK-0045,False
+ENQ-00291,2024-02-01,WhatsApp,Availability Check,0.7,Agent_29,RK-0131,False
+ENQ-00292,2024-09-09,Email,Pricing Question,31.9,Agent_46,RK-0068,False
+ENQ-00293,2024-05-20,Phone,Viewing Request,0.1,Agent_02,RK-0445,True
+ENQ-00294,2024-06-20,Email,Availability Check,21.1,Agent_18,RK-0333,False
+ENQ-00295,2024-02-27,Email,Availability Check,32.9,Agent_25,RK-0162,False
+ENQ-00296,2024-03-11,Email,Availability Check,2.9,Agent_03,RK-0026,False
+ENQ-00297,2025-02-11,Contact Form,Design Consultation,7.2,Agent_42,RK-0204,False
+ENQ-00298,2025-03-25,Email,General Enquiry,1.3,Agent_36,RK-0104,True
+ENQ-00299,2025-07-09,Phone,Viewing Request,0.2,Agent_30,RK-0264,False
+ENQ-00300,2024-11-24,Email,Design Consultation,8.7,Agent_11,RK-0207,True
+ENQ-00301,2024-07-29,Email,Viewing Request,7.1,Agent_19,RK-0384,False
+ENQ-00302,2025-02-16,Contact Form,Design Consultation,4.7,Agent_19,RK-0097,False
+ENQ-00303,2025-10-08,Contact Form,Viewing Request,2.2,Agent_28,RK-0373,False
+ENQ-00304,2024-10-08,Contact Form,Design Consultation,1.0,Agent_43,RK-0279,True
+ENQ-00305,2024-01-18,Email,Availability Check,3.6,Agent_39,RK-0417,False
+ENQ-00306,2025-02-25,Email,General Enquiry,18.8,Agent_42,RK-0216,False
+ENQ-00307,2025-02-28,Contact Form,Viewing Request,5.0,Agent_29,RK-0186,False
+ENQ-00308,2024-05-29,Contact Form,Pricing Question,21.9,Agent_14,RK-0278,False
+ENQ-00309,2025-03-30,Email,General Enquiry,4.9,Agent_10,RK-0183,False
+ENQ-00310,2024-03-19,Contact Form,General Enquiry,21.7,Agent_34,RK-0291,False
+ENQ-00311,2025-09-23,Phone,Pricing Question,1.0,Agent_19,RK-0323,False
+ENQ-00312,2024-11-24,Email,Availability Check,2.3,Agent_30,RK-0452,False
+ENQ-00313,2024-03-31,Email,Pricing Question,1.0,Agent_41,RK-0130,True
+ENQ-00314,2025-12-20,Phone,Pricing Question,1.3,Agent_46,RK-0029,False
+ENQ-00315,2025-10-16,Contact Form,Viewing Request,1.0,Agent_10,RK-0433,False
+ENQ-00316,2024-03-04,Email,Viewing Request,49.6,Agent_31,RK-0371,False
+ENQ-00317,2025-06-24,Email,Design Consultation,7.7,Agent_01,RK-0437,False
+ENQ-00318,2025-01-27,WhatsApp,Viewing Request,0.5,Agent_27,RK-0362,True
+ENQ-00319,2025-07-09,Contact Form,General Enquiry,19.1,Agent_40,RK-0244,False
+ENQ-00320,2024-08-18,WhatsApp,Viewing Request,4.9,Agent_30,RK-0069,False
+ENQ-00321,2024-09-23,Email,Availability Check,3.8,Agent_31,RK-0161,False
+ENQ-00322,2024-06-22,Email,Complaint,1.0,Agent_23,RK-0377,True
+ENQ-00323,2025-09-08,Email,Viewing Request,7.3,Agent_05,RK-0180,False
+ENQ-00324,2024-01-20,Contact Form,Viewing Request,9.2,Agent_02,RK-0121,False
+ENQ-00325,2025-03-29,Email,General Enquiry,6.2,Agent_05,RK-0013,False
+ENQ-00326,2025-07-13,Email,Complaint,5.8,Agent_05,RK-0482,False
+ENQ-00327,2024-07-23,Email,Viewing Request,7.8,Agent_20,RK-0415,False
+ENQ-00328,2024-04-13,WhatsApp,Viewing Request,2.4,Agent_16,RK-0498,False
+ENQ-00329,2025-12-17,Phone,General Enquiry,0.1,Agent_32,RK-0254,False
+ENQ-00330,2024-06-20,Email,Design Consultation,1.0,Agent_13,RK-0188,False
+ENQ-00331,2025-06-10,Email,Availability Check,2.2,Agent_41,RK-0330,False
+ENQ-00332,2024-10-31,Contact Form,Pricing Question,1.0,Agent_16,RK-0227,False
+ENQ-00333,2025-06-24,WhatsApp,Viewing Request,2.1,Agent_25,RK-0277,False
+ENQ-00334,2024-02-26,Contact Form,Pricing Question,6.0,Agent_30,RK-0275,False
+ENQ-00335,2025-03-15,Contact Form,Pricing Question,15.0,Agent_39,RK-0488,False
+ENQ-00336,2025-12-01,WhatsApp,General Enquiry,7.2,Agent_37,RK-0034,False
+ENQ-00337,2025-12-08,Phone,Design Consultation,0.1,Agent_16,RK-0218,False
+ENQ-00338,2024-08-09,Email,Viewing Request,3.1,Agent_16,RK-0424,True
+ENQ-00339,2024-01-21,Phone,Pricing Question,0.3,Agent_41,RK-0134,False
+ENQ-00340,2025-02-07,WhatsApp,Viewing Request,3.3,Agent_38,RK-0259,False
+ENQ-00341,2024-04-12,Email,Availability Check,1.8,Agent_34,RK-0431,True
+ENQ-00342,2024-01-26,WhatsApp,Availability Check,0.6,Agent_31,RK-0472,False
+ENQ-00343,2025-09-09,Email,Availability Check,2.1,Agent_48,RK-0024,False
+ENQ-00344,2025-05-16,WhatsApp,Pricing Question,0.5,Agent_46,RK-0402,False
+ENQ-00345,2024-05-16,WhatsApp,Complaint,0.9,Agent_42,RK-0086,True
+ENQ-00346,2024-02-22,Email,Pricing Question,14.5,Agent_49,RK-0496,False
+ENQ-00347,2025-08-21,Email,Availability Check,8.8,Agent_37,RK-0463,False
+ENQ-00348,2025-09-10,Email,Viewing Request,1.0,Agent_04,RK-0214,False
+ENQ-00349,2024-02-28,WhatsApp,Pricing Question,1.3,Agent_08,RK-0413,True
+ENQ-00350,2024-09-30,Email,Availability Check,5.3,Agent_35,RK-0393,False
+ENQ-00351,2025-12-03,WhatsApp,Viewing Request,3.9,Agent_28,RK-0075,True
+ENQ-00352,2024-01-21,WhatsApp,Complaint,3.3,Agent_21,RK-0188,False
+ENQ-00353,2025-04-24,Email,Pricing Question,2.4,Agent_14,RK-0456,False
+ENQ-00354,2025-01-05,Contact Form,Availability Check,2.9,Agent_08,RK-0243,False
+ENQ-00355,2025-07-08,Email,General Enquiry,1.0,Agent_12,RK-0100,False
+ENQ-00356,2025-02-02,Contact Form,Viewing Request,1.0,Agent_28,RK-0142,True
+ENQ-00357,2025-02-19,WhatsApp,Viewing Request,0.5,Agent_18,RK-0344,False
+ENQ-00358,2024-10-06,Email,Complaint,1.0,Agent_22,RK-0246,True
+ENQ-00359,2024-09-30,WhatsApp,Viewing Request,0.5,Agent_07,RK-0407,False
+ENQ-00360,2025-04-14,Email,Design Consultation,20.9,Agent_18,RK-0206,False
+ENQ-00361,2024-10-06,WhatsApp,General Enquiry,3.5,Agent_04,RK-0475,False
+ENQ-00362,2024-10-31,Email,Availability Check,6.7,Agent_26,RK-0441,False
+ENQ-00363,2024-01-07,WhatsApp,Viewing Request,1.4,Agent_28,RK-0462,False
+ENQ-00364,2025-04-30,Phone,Design Consultation,0.5,Agent_07,RK-0230,False
+ENQ-00365,2025-01-01,Contact Form,General Enquiry,8.3,Agent_11,RK-0360,False
+ENQ-00366,2025-12-01,Email,Viewing Request,10.5,Agent_09,RK-0304,False
+ENQ-00367,2024-02-10,Email,Design Consultation,10.2,Agent_44,RK-0281,False
+ENQ-00368,2024-04-28,Email,Pricing Question,1.0,Agent_04,RK-0499,True
+ENQ-00369,2024-10-10,WhatsApp,General Enquiry,0.7,Agent_10,RK-0339,False
+ENQ-00370,2024-04-14,Contact Form,General Enquiry,1.0,Agent_06,RK-0107,False
+ENQ-00371,2024-08-08,Phone,Availability Check,1.1,Agent_29,RK-0225,False
+ENQ-00372,2024-08-23,WhatsApp,Viewing Request,1.4,Agent_47,RK-0006,False
+ENQ-00373,2024-04-13,WhatsApp,Availability Check,0.5,Agent_33,RK-0040,True
+ENQ-00374,2025-07-22,Email,Pricing Question,10.9,Agent_50,RK-0199,False
+ENQ-00375,2024-11-05,Phone,General Enquiry,0.4,Agent_46,RK-0152,False
+ENQ-00376,2024-10-04,WhatsApp,Pricing Question,2.0,Agent_49,RK-0302,False
+ENQ-00377,2025-02-24,Contact Form,Pricing Question,6.0,Agent_44,RK-0383,False
+ENQ-00378,2025-11-17,Contact Form,Design Consultation,3.0,Agent_33,RK-0444,False
+ENQ-00379,2024-07-23,Contact Form,Availability Check,1.0,Agent_13,RK-0065,True
+ENQ-00380,2024-08-26,Email,Viewing Request,24.1,Agent_03,RK-0395,False
+ENQ-00381,2025-11-19,Email,Design Consultation,6.2,Agent_39,RK-0053,False
+ENQ-00382,2024-12-25,Contact Form,Design Consultation,18.4,Agent_12,RK-0291,False
+ENQ-00383,2025-02-18,WhatsApp,General Enquiry,5.2,Agent_07,RK-0022,False
+ENQ-00384,2025-03-15,Contact Form,Design Consultation,1.0,Agent_12,RK-0007,True
+ENQ-00385,2025-07-20,WhatsApp,Pricing Question,1.8,Agent_09,RK-0233,False
+ENQ-00386,2024-11-28,WhatsApp,Viewing Request,1.9,Agent_17,RK-0130,False
+ENQ-00387,2024-04-02,Email,General Enquiry,8.0,Agent_40,RK-0463,True
+ENQ-00388,2025-11-12,WhatsApp,Pricing Question,8.2,Agent_48,RK-0270,False
+ENQ-00389,2024-11-28,WhatsApp,Availability Check,8.9,Agent_43,RK-0310,False
+ENQ-00390,2025-10-29,WhatsApp,Availability Check,6.7,Agent_07,RK-0422,False
+ENQ-00391,2024-03-02,WhatsApp,Viewing Request,2.5,Agent_08,RK-0465,False
+ENQ-00392,2024-10-15,WhatsApp,Complaint,1.0,Agent_27,RK-0240,False
+ENQ-00393,2025-05-22,Phone,Availability Check,2.1,Agent_29,RK-0114,False
+ENQ-00394,2024-05-24,WhatsApp,Availability Check,0.5,Agent_38,RK-0181,False
+ENQ-00395,2025-09-03,Email,Pricing Question,15.5,Agent_17,RK-0079,False
+ENQ-00396,2025-11-18,Contact Form,General Enquiry,11.5,Agent_32,RK-0006,False
+ENQ-00397,2025-03-02,Email,Pricing Question,7.1,Agent_05,RK-0210,False
+ENQ-00398,2024-04-05,Contact Form,Viewing Request,10.6,Agent_10,RK-0184,False
+ENQ-00399,2025-05-15,WhatsApp,Availability Check,2.4,Agent_09,RK-0314,True
+ENQ-00400,2025-03-13,Email,Viewing Request,10.3,Agent_14,RK-0039,True
+ENQ-00401,2024-06-10,Phone,Pricing Question,0.1,Agent_44,RK-0034,True
+ENQ-00402,2024-04-22,Email,Pricing Question,7.3,Agent_25,RK-0189,False
+ENQ-00403,2024-07-30,Email,Viewing Request,9.3,Agent_17,RK-0315,False
+ENQ-00404,2025-05-26,Email,Availability Check,1.0,Agent_49,RK-0228,False
+ENQ-00405,2025-11-02,WhatsApp,Availability Check,10.4,Agent_47,RK-0290,False
+ENQ-00406,2025-10-18,Email,Availability Check,1.1,Agent_19,RK-0323,False
+ENQ-00407,2025-05-13,Contact Form,Complaint,1.0,Agent_48,RK-0402,False
+ENQ-00408,2025-11-13,Contact Form,Design Consultation,7.4,Agent_10,RK-0327,False
+ENQ-00409,2024-05-08,Contact Form,Pricing Question,17.8,Agent_25,RK-0391,False
+ENQ-00410,2024-07-27,Phone,Availability Check,4.1,Agent_24,RK-0011,True
+ENQ-00411,2024-02-04,WhatsApp,Design Consultation,7.4,Agent_23,RK-0083,False
+ENQ-00412,2024-12-09,WhatsApp,General Enquiry,4.8,Agent_31,RK-0477,False
+ENQ-00413,2025-06-26,WhatsApp,Complaint,0.5,Agent_39,RK-0196,False
+ENQ-00414,2025-12-06,Phone,Availability Check,2.4,Agent_21,RK-0428,False
+ENQ-00415,2025-09-05,Contact Form,General Enquiry,2.1,Agent_11,RK-0472,False
+ENQ-00416,2025-06-21,Email,Viewing Request,8.9,Agent_29,RK-0363,False
+ENQ-00417,2024-11-19,Email,General Enquiry,27.4,Agent_28,RK-0286,False
+ENQ-00418,2024-06-01,WhatsApp,Availability Check,0.8,Agent_10,RK-0092,False
+ENQ-00419,2025-03-24,Contact Form,Availability Check,1.0,Agent_18,RK-0489,False
+ENQ-00420,2025-04-19,Contact Form,Viewing Request,2.7,Agent_26,RK-0309,False
+ENQ-00421,2025-05-23,Email,Availability Check,1.3,Agent_36,RK-0006,False
+ENQ-00422,2025-12-17,WhatsApp,Pricing Question,4.1,Agent_39,RK-0468,False
+ENQ-00423,2024-02-25,Phone,Viewing Request,1.2,Agent_16,RK-0120,False
+ENQ-00424,2025-06-03,Contact Form,General Enquiry,22.8,Agent_15,RK-0086,True
+ENQ-00425,2025-10-23,Contact Form,Pricing Question,1.0,Agent_26,RK-0077,False
+ENQ-00426,2025-01-18,Email,Availability Check,7.7,Agent_49,RK-0094,False
+ENQ-00427,2025-12-03,Email,Viewing Request,20.3,Agent_17,RK-0296,False
+ENQ-00428,2024-02-26,Phone,Viewing Request,0.7,Agent_34,RK-0202,False
+ENQ-00429,2025-03-29,Phone,Design Consultation,0.2,Agent_27,RK-0186,False
+ENQ-00430,2024-05-13,WhatsApp,Availability Check,3.3,Agent_25,RK-0125,False
+ENQ-00431,2024-02-20,Email,Availability Check,8.4,Agent_35,RK-0106,False
+ENQ-00432,2024-10-28,Email,General Enquiry,9.4,Agent_42,RK-0498,False
+ENQ-00433,2025-10-12,WhatsApp,Availability Check,8.0,Agent_41,RK-0314,True
+ENQ-00434,2025-12-13,Phone,Availability Check,0.1,Agent_02,RK-0230,False
+ENQ-00435,2025-02-18,WhatsApp,Viewing Request,2.1,Agent_45,RK-0116,False
+ENQ-00436,2025-02-25,WhatsApp,General Enquiry,0.5,Agent_18,RK-0082,False
+ENQ-00437,2025-08-22,Contact Form,Availability Check,5.9,Agent_07,RK-0422,True
+ENQ-00438,2024-05-12,Email,Availability Check,4.7,Agent_02,RK-0213,False
+ENQ-00439,2025-04-15,Email,Viewing Request,21.6,Agent_20,RK-0082,False
+ENQ-00440,2025-01-16,Email,General Enquiry,2.3,Agent_24,RK-0444,True
+ENQ-00441,2025-04-05,WhatsApp,Availability Check,6.2,Agent_02,RK-0336,False
+ENQ-00442,2024-11-16,Email,General Enquiry,3.0,Agent_37,RK-0337,True
+ENQ-00443,2024-10-21,Email,Availability Check,1.9,Agent_10,RK-0187,False
+ENQ-00444,2025-12-16,WhatsApp,General Enquiry,2.5,Agent_32,RK-0026,False
+ENQ-00445,2024-02-25,WhatsApp,Pricing Question,1.1,Agent_39,RK-0455,False
+ENQ-00446,2025-01-27,Contact Form,General Enquiry,12.8,Agent_20,RK-0053,False
+ENQ-00447,2024-06-16,Email,Pricing Question,4.6,Agent_18,RK-0204,True
+ENQ-00448,2024-06-15,Contact Form,Viewing Request,4.6,Agent_07,RK-0464,False
+ENQ-00449,2025-01-05,Email,General Enquiry,4.5,Agent_17,RK-0192,True
+ENQ-00450,2025-07-27,Email,Availability Check,15.6,Agent_47,RK-0020,True
+ENQ-00451,2024-12-28,Phone,Pricing Question,0.2,Agent_04,RK-0077,False
+ENQ-00452,2025-02-05,Phone,Pricing Question,0.2,Agent_19,RK-0201,False
+ENQ-00453,2025-09-28,WhatsApp,General Enquiry,1.7,Agent_47,RK-0271,False
+ENQ-00454,2025-09-08,Email,Availability Check,7.1,Agent_23,RK-0236,False
+ENQ-00455,2025-09-08,Email,General Enquiry,5.0,Agent_49,RK-0225,False
+ENQ-00456,2025-08-04,Email,Complaint,6.3,Agent_14,RK-0164,False
+ENQ-00457,2025-06-03,Email,Viewing Request,16.3,Agent_16,RK-0470,False
+ENQ-00458,2024-04-13,Email,Viewing Request,3.0,Agent_10,RK-0106,True
+ENQ-00459,2024-10-03,Contact Form,Pricing Question,10.5,Agent_10,RK-0343,False
+ENQ-00460,2025-01-14,Phone,Availability Check,0.5,Agent_10,RK-0182,True
+ENQ-00461,2024-11-28,Email,Pricing Question,2.7,Agent_31,RK-0023,False
+ENQ-00462,2025-09-10,Email,Viewing Request,6.9,Agent_28,RK-0298,False
+ENQ-00463,2024-11-12,Contact Form,Design Consultation,10.8,Agent_10,RK-0008,False
+ENQ-00464,2024-11-10,Email,Viewing Request,1.0,Agent_11,RK-0020,False
+ENQ-00465,2024-05-09,Email,Viewing Request,21.6,Agent_25,RK-0387,False
+ENQ-00466,2024-08-02,WhatsApp,General Enquiry,4.4,Agent_22,RK-0326,False
+ENQ-00467,2024-12-15,Email,Viewing Request,9.0,Agent_08,RK-0432,False
+ENQ-00468,2025-06-10,Contact Form,General Enquiry,18.8,Agent_50,RK-0147,False
+ENQ-00469,2025-01-13,WhatsApp,Viewing Request,2.6,Agent_18,RK-0313,False
+ENQ-00470,2024-12-19,Email,General Enquiry,1.7,Agent_42,RK-0247,False
+ENQ-00471,2025-03-20,Contact Form,General Enquiry,4.5,Agent_39,RK-0145,False
+ENQ-00472,2024-06-27,Email,Pricing Question,7.9,Agent_30,RK-0153,False
+ENQ-00473,2024-05-07,Contact Form,Viewing Request,16.5,Agent_31,RK-0026,False
+ENQ-00474,2024-01-23,WhatsApp,Pricing Question,1.1,Agent_09,RK-0156,False
+ENQ-00475,2025-11-11,Email,Availability Check,3.3,Agent_08,RK-0315,False
+ENQ-00476,2024-08-17,Email,Design Consultation,2.5,Agent_41,RK-0193,False
+ENQ-00477,2025-03-14,Contact Form,General Enquiry,1.0,Agent_14,RK-0038,True
+ENQ-00478,2025-04-08,Contact Form,Availability Check,5.7,Agent_29,RK-0274,False
+ENQ-00479,2024-09-26,Contact Form,General Enquiry,13.1,Agent_42,RK-0186,False
+ENQ-00480,2025-02-17,Contact Form,Availability Check,15.7,Agent_08,RK-0223,False
+ENQ-00481,2024-08-23,Email,Viewing Request,13.0,Agent_09,RK-0190,False
+ENQ-00482,2025-11-07,Email,General Enquiry,8.4,Agent_46,RK-0203,False
+ENQ-00483,2024-01-04,Phone,Availability Check,0.5,Agent_44,RK-0048,True
+ENQ-00484,2024-07-31,Phone,General Enquiry,0.8,Agent_09,RK-0004,False
+ENQ-00485,2024-03-17,WhatsApp,General Enquiry,3.2,Agent_39,RK-0476,False
+ENQ-00486,2024-03-28,Phone,Pricing Question,0.4,Agent_02,RK-0266,False
+ENQ-00487,2025-12-17,WhatsApp,General Enquiry,3.4,Agent_20,RK-0143,False
+ENQ-00488,2024-05-31,Email,Viewing Request,17.1,Agent_48,RK-0144,False
+ENQ-00489,2024-08-11,Phone,Viewing Request,0.6,Agent_20,RK-0016,False
+ENQ-00490,2024-02-28,WhatsApp,Design Consultation,9.4,Agent_33,RK-0286,False
+ENQ-00491,2025-06-10,Phone,Pricing Question,1.2,Agent_30,RK-0225,False
+ENQ-00492,2025-04-07,Contact Form,Viewing Request,7.4,Agent_38,RK-0430,False
+ENQ-00493,2024-09-02,Email,Viewing Request,3.8,Agent_24,RK-0313,False
+ENQ-00494,2025-10-23,Contact Form,General Enquiry,14.4,Agent_34,RK-0313,False
+ENQ-00495,2024-02-24,Email,General Enquiry,3.7,Agent_45,RK-0116,False
+ENQ-00496,2025-12-05,Email,Viewing Request,21.1,Agent_18,RK-0495,False
+ENQ-00497,2025-08-01,WhatsApp,General Enquiry,0.8,Agent_27,RK-0459,False
+ENQ-00498,2025-08-05,WhatsApp,Pricing Question,1.3,Agent_47,RK-0357,True
+ENQ-00499,2024-06-06,Email,Viewing Request,13.1,Agent_39,RK-0410,False
+ENQ-00500,2024-10-05,Email,Viewing Request,18.6,Agent_27,RK-0307,False
+ENQ-00501,2024-07-27,Contact Form,General Enquiry,25.7,Agent_09,RK-0141,False
+ENQ-00502,2025-09-12,Email,Design Consultation,7.7,Agent_24,RK-0420,True
+ENQ-00503,2025-09-08,Email,Availability Check,7.1,Agent_44,RK-0459,False
+ENQ-00504,2025-02-05,Phone,Viewing Request,2.0,Agent_25,RK-0268,False
+ENQ-00505,2024-01-11,WhatsApp,Viewing Request,8.1,Agent_25,RK-0355,False
+ENQ-00506,2025-11-19,WhatsApp,Viewing Request,1.8,Agent_05,RK-0389,False
+ENQ-00507,2024-05-26,Contact Form,Pricing Question,1.0,Agent_33,RK-0386,False
+ENQ-00508,2024-09-13,Contact Form,Pricing Question,1.0,Agent_47,RK-0172,False
+ENQ-00509,2024-08-08,Email,Availability Check,1.0,Agent_34,RK-0386,False
+ENQ-00510,2024-12-20,Contact Form,Viewing Request,1.0,Agent_14,RK-0447,False
+ENQ-00511,2024-04-02,Email,Availability Check,8.1,Agent_49,RK-0346,False
+ENQ-00512,2024-08-02,Email,Pricing Question,4.9,Agent_02,RK-0380,True
+ENQ-00513,2025-08-22,Contact Form,Viewing Request,1.0,Agent_27,RK-0444,False
+ENQ-00514,2025-10-01,WhatsApp,Viewing Request,1.3,Agent_37,RK-0254,False
+ENQ-00515,2025-03-06,Email,General Enquiry,1.0,Agent_14,RK-0428,False
+ENQ-00516,2024-02-23,Email,Viewing Request,1.0,Agent_10,RK-0010,False
+ENQ-00517,2024-10-21,WhatsApp,Viewing Request,0.5,Agent_43,RK-0463,False
+ENQ-00518,2024-04-10,Phone,General Enquiry,0.1,Agent_42,RK-0381,False
+ENQ-00519,2025-03-22,WhatsApp,Pricing Question,4.6,Agent_26,RK-0222,False
+ENQ-00520,2024-10-04,Email,Pricing Question,23.2,Agent_07,RK-0242,False
+ENQ-00521,2024-01-30,Email,Pricing Question,10.7,Agent_45,RK-0265,False
+ENQ-00522,2024-09-25,WhatsApp,Availability Check,1.9,Agent_31,RK-0180,True
+ENQ-00523,2024-06-11,WhatsApp,General Enquiry,2.1,Agent_21,RK-0353,False
+ENQ-00524,2024-03-23,Email,Complaint,17.7,Agent_15,RK-0078,False
+ENQ-00525,2025-01-16,Contact Form,Pricing Question,7.0,Agent_34,RK-0422,False
+ENQ-00526,2025-08-26,Contact Form,Pricing Question,7.6,Agent_06,RK-0078,False
+ENQ-00527,2024-09-09,Contact Form,General Enquiry,3.8,Agent_27,RK-0122,True
+ENQ-00528,2025-06-21,Phone,Availability Check,0.6,Agent_36,RK-0490,False
+ENQ-00529,2025-08-02,Contact Form,Design Consultation,11.8,Agent_10,RK-0409,False
+ENQ-00530,2024-04-20,Email,Viewing Request,2.4,Agent_08,RK-0099,True
+ENQ-00531,2024-05-25,Contact Form,Viewing Request,13.4,Agent_04,RK-0297,False
+ENQ-00532,2024-09-27,Phone,General Enquiry,0.5,Agent_26,RK-0359,False
+ENQ-00533,2024-11-29,Phone,Viewing Request,0.7,Agent_31,RK-0199,False
+ENQ-00534,2025-11-22,WhatsApp,Pricing Question,0.6,Agent_48,RK-0109,False
+ENQ-00535,2025-07-03,WhatsApp,Viewing Request,0.5,Agent_17,RK-0244,True
+ENQ-00536,2024-02-16,Phone,Viewing Request,0.1,Agent_45,RK-0090,False
+ENQ-00537,2024-08-08,Phone,Viewing Request,2.9,Agent_18,RK-0043,True
+ENQ-00538,2025-09-06,Email,Availability Check,3.3,Agent_03,RK-0374,False
+ENQ-00539,2025-03-17,WhatsApp,Complaint,4.5,Agent_48,RK-0199,False
+ENQ-00540,2025-10-28,WhatsApp,Viewing Request,2.0,Agent_15,RK-0282,False
+ENQ-00541,2025-05-30,Phone,General Enquiry,0.3,Agent_22,RK-0395,False
+ENQ-00542,2025-07-27,Email,Complaint,32.6,Agent_21,RK-0141,False
+ENQ-00543,2025-04-03,Email,Availability Check,1.0,Agent_31,RK-0470,True
+ENQ-00544,2025-10-01,Contact Form,Pricing Question,26.6,Agent_34,RK-0064,True
+ENQ-00545,2025-07-13,Email,Availability Check,4.5,Agent_13,RK-0257,False
+ENQ-00546,2024-02-07,Email,Viewing Request,17.0,Agent_37,RK-0383,False
+ENQ-00547,2025-07-22,Contact Form,Viewing Request,23.7,Agent_01,RK-0268,False
+ENQ-00548,2025-08-23,Email,Availability Check,7.1,Agent_03,RK-0049,False
+ENQ-00549,2025-02-16,Phone,General Enquiry,1.0,Agent_46,RK-0420,False
+ENQ-00550,2025-07-14,Email,General Enquiry,14.3,Agent_50,RK-0452,False
+ENQ-00551,2024-10-19,Phone,Availability Check,0.4,Agent_20,RK-0230,False
+ENQ-00552,2025-12-04,Email,Availability Check,4.7,Agent_24,RK-0201,False
+ENQ-00553,2025-01-16,Contact Form,Design Consultation,1.0,Agent_27,RK-0214,False
+ENQ-00554,2025-11-28,Email,Viewing Request,6.9,Agent_32,RK-0489,False
+ENQ-00555,2024-06-29,Email,Complaint,12.2,Agent_04,RK-0475,False
+ENQ-00556,2025-04-17,Contact Form,General Enquiry,4.0,Agent_17,RK-0493,True
+ENQ-00557,2025-04-30,Contact Form,Design Consultation,22.6,Agent_37,RK-0302,True
+ENQ-00558,2025-10-05,Email,Complaint,1.0,Agent_19,RK-0122,False
+ENQ-00559,2025-10-27,Email,General Enquiry,9.8,Agent_01,RK-0428,False
+ENQ-00560,2025-02-24,Email,Design Consultation,1.3,Agent_09,RK-0461,False
+ENQ-00561,2025-04-08,Phone,Availability Check,1.0,Agent_43,RK-0126,False
+ENQ-00562,2024-12-02,Email,Availability Check,4.1,Agent_19,RK-0007,True
+ENQ-00563,2025-07-19,Email,Complaint,6.6,Agent_50,RK-0242,False
+ENQ-00564,2025-04-06,Phone,Viewing Request,0.6,Agent_31,RK-0176,False
+ENQ-00565,2024-02-16,Contact Form,Design Consultation,13.4,Agent_17,RK-0123,True
+ENQ-00566,2025-09-10,Email,Viewing Request,9.4,Agent_23,RK-0054,False
+ENQ-00567,2024-08-22,Email,Availability Check,28.2,Agent_17,RK-0423,False
+ENQ-00568,2024-11-06,Contact Form,Availability Check,2.9,Agent_18,RK-0171,False
+ENQ-00569,2025-09-16,Email,Design Consultation,1.7,Agent_05,RK-0068,False
+ENQ-00570,2025-09-19,Contact Form,Pricing Question,1.0,Agent_03,RK-0074,False
+ENQ-00571,2024-07-02,WhatsApp,Viewing Request,0.6,Agent_31,RK-0059,True
+ENQ-00572,2025-10-04,Contact Form,General Enquiry,1.0,Agent_36,RK-0189,False
+ENQ-00573,2025-01-22,Contact Form,Design Consultation,24.9,Agent_48,RK-0387,False
+ENQ-00574,2024-08-20,Email,Availability Check,1.0,Agent_21,RK-0282,False
+ENQ-00575,2024-08-14,WhatsApp,Pricing Question,0.5,Agent_03,RK-0449,False
+ENQ-00576,2025-05-16,Email,Pricing Question,3.7,Agent_14,RK-0044,False
+ENQ-00577,2024-11-28,Phone,General Enquiry,1.8,Agent_39,RK-0417,False
+ENQ-00578,2024-11-20,Email,General Enquiry,5.8,Agent_46,RK-0353,False
+ENQ-00579,2025-10-11,Email,Availability Check,1.0,Agent_50,RK-0052,True
+ENQ-00580,2025-02-15,Email,Design Consultation,2.3,Agent_34,RK-0481,False
+ENQ-00581,2024-04-29,Contact Form,General Enquiry,1.0,Agent_22,RK-0493,False
+ENQ-00582,2024-10-12,Email,Viewing Request,7.4,Agent_33,RK-0453,False
+ENQ-00583,2025-09-28,WhatsApp,Availability Check,5.4,Agent_33,RK-0121,True
+ENQ-00584,2025-04-26,Email,Availability Check,2.3,Agent_26,RK-0161,False
+ENQ-00585,2025-06-11,Phone,Viewing Request,0.1,Agent_23,RK-0082,False
+ENQ-00586,2025-05-14,Contact Form,Design Consultation,12.3,Agent_26,RK-0137,False
+ENQ-00587,2025-06-11,WhatsApp,Pricing Question,2.8,Agent_33,RK-0242,False
+ENQ-00588,2025-10-14,Contact Form,Viewing Request,3.9,Agent_25,RK-0303,True
+ENQ-00589,2025-02-20,WhatsApp,Design Consultation,4.7,Agent_20,RK-0072,False
+ENQ-00590,2025-06-04,Email,General Enquiry,11.8,Agent_20,RK-0490,False
+ENQ-00591,2024-11-21,Contact Form,Viewing Request,22.8,Agent_20,RK-0387,True
+ENQ-00592,2024-06-02,Contact Form,General Enquiry,6.1,Agent_37,RK-0493,False
+ENQ-00593,2025-02-14,Contact Form,Availability Check,13.3,Agent_24,RK-0110,False
+ENQ-00594,2025-08-05,WhatsApp,Availability Check,6.7,Agent_24,RK-0328,True
+ENQ-00595,2024-06-14,WhatsApp,Viewing Request,9.1,Agent_14,RK-0033,False
+ENQ-00596,2024-07-10,Contact Form,Viewing Request,21.6,Agent_43,RK-0336,False
+ENQ-00597,2024-04-06,WhatsApp,Pricing Question,0.5,Agent_09,RK-0283,False
+ENQ-00598,2024-01-08,Email,General Enquiry,7.5,Agent_12,RK-0006,False
+ENQ-00599,2025-05-31,WhatsApp,General Enquiry,0.5,Agent_19,RK-0438,False
+ENQ-00600,2025-01-21,Email,Design Consultation,2.9,Agent_19,RK-0338,False
+ENQ-00601,2024-04-04,Phone,Pricing Question,1.1,Agent_16,RK-0336,False
+ENQ-00602,2025-02-28,Email,Pricing Question,1.6,Agent_25,RK-0160,False
+ENQ-00603,2025-06-24,Email,Design Consultation,28.4,Agent_25,RK-0269,False
+ENQ-00604,2024-09-24,Email,Availability Check,5.8,Agent_50,RK-0440,False
+ENQ-00605,2025-05-03,Contact Form,Viewing Request,6.9,Agent_45,RK-0017,False
+ENQ-00606,2025-07-11,Phone,Availability Check,0.1,Agent_30,RK-0242,False
+ENQ-00607,2025-07-19,Phone,Complaint,0.1,Agent_37,RK-0317,False
+ENQ-00608,2025-12-21,Contact Form,Viewing Request,3.1,Agent_02,RK-0480,True
+ENQ-00609,2024-05-02,Email,General Enquiry,11.2,Agent_17,RK-0268,False
+ENQ-00610,2024-04-04,Contact Form,Availability Check,1.0,Agent_24,RK-0069,False
+ENQ-00611,2025-06-25,Contact Form,Viewing Request,8.2,Agent_02,RK-0266,False
+ENQ-00612,2024-07-25,WhatsApp,Viewing Request,1.2,Agent_08,RK-0427,False
+ENQ-00613,2025-02-23,Contact Form,Design Consultation,26.7,Agent_13,RK-0257,True
+ENQ-00614,2024-05-10,Email,Availability Check,6.5,Agent_03,RK-0349,False
+ENQ-00615,2024-11-26,Email,Availability Check,10.2,Agent_29,RK-0330,False
+ENQ-00616,2024-05-26,Phone,Availability Check,0.1,Agent_43,RK-0115,False
+ENQ-00617,2025-12-20,Email,Viewing Request,45.7,Agent_37,RK-0078,False
+ENQ-00618,2024-04-13,Email,Viewing Request,6.5,Agent_04,RK-0478,False
+ENQ-00619,2024-08-10,Email,Pricing Question,4.6,Agent_46,RK-0310,False
+ENQ-00620,2024-06-13,Email,Availability Check,1.2,Agent_13,RK-0435,False
+ENQ-00621,2024-01-19,Email,Viewing Request,6.7,Agent_02,RK-0040,True
+ENQ-00622,2025-11-25,Contact Form,General Enquiry,6.3,Agent_08,RK-0086,True
+ENQ-00623,2025-03-31,Contact Form,Pricing Question,16.6,Agent_21,RK-0090,False
+ENQ-00624,2025-06-23,Contact Form,Viewing Request,9.0,Agent_26,RK-0223,False
+ENQ-00625,2025-03-09,Contact Form,Viewing Request,10.8,Agent_02,RK-0298,False
+ENQ-00626,2024-09-05,Contact Form,General Enquiry,17.6,Agent_38,RK-0417,False
+ENQ-00627,2024-06-22,Email,General Enquiry,17.8,Agent_16,RK-0015,True
+ENQ-00628,2024-09-25,Contact Form,Design Consultation,8.6,Agent_17,RK-0434,False
+ENQ-00629,2025-07-20,WhatsApp,Availability Check,1.2,Agent_29,RK-0022,False
+ENQ-00630,2025-07-13,Phone,Viewing Request,1.4,Agent_37,RK-0071,False
+ENQ-00631,2025-11-15,Contact Form,Pricing Question,1.0,Agent_25,RK-0172,True
+ENQ-00632,2024-02-09,Email,Pricing Question,15.3,Agent_13,RK-0253,False
+ENQ-00633,2025-01-15,Email,Pricing Question,8.5,Agent_41,RK-0227,True
+ENQ-00634,2025-03-29,Email,Viewing Request,2.4,Agent_16,RK-0024,False
+ENQ-00635,2024-06-23,Email,Viewing Request,10.2,Agent_30,RK-0018,False
+ENQ-00636,2025-01-11,Contact Form,Availability Check,5.2,Agent_25,RK-0056,False
+ENQ-00637,2024-02-28,Email,General Enquiry,18.9,Agent_43,RK-0191,False
+ENQ-00638,2025-11-09,WhatsApp,Availability Check,5.8,Agent_12,RK-0035,False
+ENQ-00639,2024-04-30,Contact Form,Pricing Question,1.1,Agent_31,RK-0388,True
+ENQ-00640,2025-12-03,WhatsApp,Viewing Request,7.1,Agent_17,RK-0382,False
+ENQ-00641,2024-11-13,Email,Design Consultation,1.1,Agent_47,RK-0205,False
+ENQ-00642,2024-11-02,Phone,Viewing Request,2.4,Agent_41,RK-0478,False
+ENQ-00643,2024-09-27,WhatsApp,Availability Check,0.5,Agent_42,RK-0368,False
+ENQ-00644,2024-08-19,Email,Viewing Request,1.0,Agent_16,RK-0234,True
+ENQ-00645,2025-03-03,Contact Form,Pricing Question,1.6,Agent_50,RK-0146,False
+ENQ-00646,2025-04-01,Email,General Enquiry,1.0,Agent_41,RK-0296,False
+ENQ-00647,2025-12-06,Phone,Viewing Request,0.6,Agent_22,RK-0004,False
+ENQ-00648,2024-06-14,WhatsApp,Viewing Request,2.2,Agent_35,RK-0031,False
+ENQ-00649,2025-02-03,Contact Form,General Enquiry,5.3,Agent_48,RK-0241,False
+ENQ-00650,2024-06-11,Contact Form,Pricing Question,15.1,Agent_38,RK-0393,False
+ENQ-00651,2025-06-16,Phone,Availability Check,0.2,Agent_23,RK-0333,False
+ENQ-00652,2025-12-05,Phone,Viewing Request,1.6,Agent_23,RK-0092,False
+ENQ-00653,2024-08-22,WhatsApp,Design Consultation,1.7,Agent_07,RK-0001,False
+ENQ-00654,2025-12-13,WhatsApp,Viewing Request,0.5,Agent_38,RK-0481,False
+ENQ-00655,2024-12-16,Email,Viewing Request,22.6,Agent_36,RK-0067,False
+ENQ-00656,2025-10-28,WhatsApp,Viewing Request,0.5,Agent_36,RK-0197,False
+ENQ-00657,2025-08-13,Email,Viewing Request,5.7,Agent_29,RK-0445,False
+ENQ-00658,2025-04-08,Email,Availability Check,8.3,Agent_41,RK-0433,True
+ENQ-00659,2025-03-15,Email,Availability Check,10.4,Agent_19,RK-0157,False
+ENQ-00660,2025-10-20,Email,Availability Check,1.0,Agent_03,RK-0358,False
+ENQ-00661,2025-03-25,Phone,Complaint,0.3,Agent_07,RK-0484,False
+ENQ-00662,2025-02-26,Contact Form,Availability Check,1.0,Agent_29,RK-0158,False
+ENQ-00663,2024-07-29,Phone,Complaint,1.0,Agent_30,RK-0259,False
+ENQ-00664,2024-10-25,Phone,Pricing Question,0.5,Agent_41,RK-0362,False
+ENQ-00665,2025-03-13,Email,Viewing Request,9.3,Agent_08,RK-0032,False
+ENQ-00666,2025-01-28,Email,General Enquiry,2.8,Agent_08,RK-0285,True
+ENQ-00667,2025-04-14,Phone,Availability Check,0.8,Agent_02,RK-0482,False
+ENQ-00668,2025-03-10,Contact Form,General Enquiry,1.0,Agent_30,RK-0466,False
+ENQ-00669,2024-08-08,Phone,Viewing Request,0.5,Agent_48,RK-0276,False
+ENQ-00670,2024-03-28,WhatsApp,Viewing Request,3.4,Agent_49,RK-0141,False
+ENQ-00671,2024-08-23,WhatsApp,Design Consultation,1.9,Agent_31,RK-0138,False
+ENQ-00672,2024-08-21,Contact Form,General Enquiry,12.9,Agent_29,RK-0361,False
+ENQ-00673,2024-06-10,WhatsApp,Viewing Request,2.2,Agent_06,RK-0395,False
+ENQ-00674,2025-04-10,Contact Form,Design Consultation,16.6,Agent_21,RK-0494,False
+ENQ-00675,2025-06-05,Contact Form,Viewing Request,4.9,Agent_50,RK-0026,False
+ENQ-00676,2025-05-22,WhatsApp,General Enquiry,0.9,Agent_01,RK-0456,False
+ENQ-00677,2025-05-16,Email,Viewing Request,25.8,Agent_12,RK-0319,False
+ENQ-00678,2024-01-01,Contact Form,Viewing Request,8.2,Agent_22,RK-0476,False
+ENQ-00679,2024-11-19,Email,General Enquiry,1.5,Agent_37,RK-0440,True
+ENQ-00680,2025-03-18,Email,General Enquiry,1.9,Agent_23,RK-0354,True
+ENQ-00681,2025-07-31,WhatsApp,General Enquiry,0.9,Agent_34,RK-0380,False
+ENQ-00682,2024-02-11,Contact Form,Pricing Question,1.2,Agent_09,RK-0114,True
+ENQ-00683,2025-04-08,Contact Form,Availability Check,4.3,Agent_06,RK-0074,False
+ENQ-00684,2024-03-17,Contact Form,Availability Check,29.9,Agent_11,RK-0344,False
+ENQ-00685,2024-03-14,Email,Pricing Question,7.0,Agent_43,RK-0474,False
+ENQ-00686,2025-02-01,Contact Form,Complaint,19.3,Agent_10,RK-0115,False
+ENQ-00687,2024-08-15,WhatsApp,Design Consultation,2.1,Agent_16,RK-0438,False
+ENQ-00688,2025-04-09,Contact Form,Pricing Question,10.8,Agent_09,RK-0403,False
+ENQ-00689,2025-02-12,WhatsApp,Complaint,3.4,Agent_39,RK-0105,True
+ENQ-00690,2025-02-17,Email,General Enquiry,16.2,Agent_34,RK-0393,False
+ENQ-00691,2025-04-30,Phone,Pricing Question,1.1,Agent_05,RK-0443,False
+ENQ-00692,2024-09-21,WhatsApp,Pricing Question,6.2,Agent_42,RK-0061,False
+ENQ-00693,2025-10-07,Contact Form,Design Consultation,1.0,Agent_47,RK-0089,False
+ENQ-00694,2024-05-11,Email,General Enquiry,12.7,Agent_35,RK-0330,False
+ENQ-00695,2025-08-04,Contact Form,Design Consultation,26.3,Agent_34,RK-0473,False
+ENQ-00696,2024-10-23,Phone,Viewing Request,0.1,Agent_31,RK-0403,True
+ENQ-00697,2024-12-14,Email,General Enquiry,13.0,Agent_40,RK-0403,False
+ENQ-00698,2025-10-07,Phone,Viewing Request,0.1,Agent_24,RK-0281,False
+ENQ-00699,2025-12-04,Email,Viewing Request,43.8,Agent_12,RK-0417,False
+ENQ-00700,2025-06-12,Phone,Availability Check,0.5,Agent_06,RK-0273,False
+ENQ-00701,2024-07-28,Email,Pricing Question,3.0,Agent_24,RK-0205,False
+ENQ-00702,2024-08-03,Contact Form,Availability Check,1.0,Agent_33,RK-0018,True
+ENQ-00703,2024-07-20,WhatsApp,Viewing Request,0.5,Agent_25,RK-0034,False
+ENQ-00704,2025-10-01,Email,Design Consultation,1.0,Agent_12,RK-0401,False
+ENQ-00705,2024-10-08,Contact Form,Pricing Question,2.8,Agent_42,RK-0317,False
+ENQ-00706,2025-06-29,Email,General Enquiry,3.4,Agent_35,RK-0025,False
+ENQ-00707,2024-09-07,WhatsApp,Pricing Question,0.5,Agent_24,RK-0149,False
+ENQ-00708,2025-08-27,Email,Pricing Question,2.3,Agent_05,RK-0446,False
+ENQ-00709,2024-08-14,WhatsApp,Availability Check,0.5,Agent_13,RK-0318,False
+ENQ-00710,2025-12-09,Contact Form,Availability Check,1.0,Agent_35,RK-0180,False
+ENQ-00711,2025-02-15,Phone,Viewing Request,1.0,Agent_33,RK-0448,False
+ENQ-00712,2025-02-27,Email,Viewing Request,3.2,Agent_31,RK-0059,False
+ENQ-00713,2024-06-24,Email,Pricing Question,7.3,Agent_12,RK-0404,False
+ENQ-00714,2024-08-20,WhatsApp,Pricing Question,0.5,Agent_07,RK-0029,False
+ENQ-00715,2025-11-18,Email,Viewing Request,1.2,Agent_45,RK-0353,False
+ENQ-00716,2024-09-21,Email,Design Consultation,13.3,Agent_11,RK-0125,False
+ENQ-00717,2025-06-08,Phone,Pricing Question,0.6,Agent_36,RK-0092,True
+ENQ-00718,2024-02-06,WhatsApp,General Enquiry,2.9,Agent_40,RK-0054,True
+ENQ-00719,2025-09-09,Email,Design Consultation,1.9,Agent_12,RK-0257,False
+ENQ-00720,2024-08-30,Email,Pricing Question,5.7,Agent_42,RK-0379,False
+ENQ-00721,2025-10-14,Phone,General Enquiry,2.7,Agent_03,RK-0311,True
+ENQ-00722,2025-07-23,Phone,Pricing Question,0.1,Agent_24,RK-0072,False
+ENQ-00723,2024-04-03,Email,Availability Check,9.7,Agent_21,RK-0356,False
+ENQ-00724,2025-07-27,Email,Pricing Question,1.1,Agent_42,RK-0178,False
+ENQ-00725,2024-09-16,Phone,Pricing Question,0.6,Agent_26,RK-0107,False
+ENQ-00726,2025-11-15,Email,Pricing Question,27.6,Agent_31,RK-0368,False
+ENQ-00727,2024-04-17,Phone,Viewing Request,0.6,Agent_16,RK-0171,False
+ENQ-00728,2025-08-08,Contact Form,Viewing Request,3.1,Agent_43,RK-0041,False
+ENQ-00729,2025-03-29,Contact Form,Complaint,14.8,Agent_16,RK-0436,True
+ENQ-00730,2025-02-24,Contact Form,Design Consultation,4.7,Agent_28,RK-0337,False
+ENQ-00731,2025-12-26,Email,Pricing Question,9.3,Agent_15,RK-0466,False
+ENQ-00732,2024-06-06,Email,Viewing Request,5.5,Agent_39,RK-0072,False
+ENQ-00733,2025-08-11,Email,Availability Check,15.3,Agent_30,RK-0415,False
+ENQ-00734,2024-06-20,WhatsApp,Viewing Request,1.9,Agent_46,RK-0135,False
+ENQ-00735,2024-10-06,Phone,Design Consultation,1.6,Agent_36,RK-0358,False
+ENQ-00736,2024-08-08,Phone,Complaint,0.7,Agent_42,RK-0375,False
+ENQ-00737,2024-01-14,Contact Form,Viewing Request,1.0,Agent_18,RK-0471,True
+ENQ-00738,2025-11-29,Contact Form,Complaint,3.4,Agent_23,RK-0219,True
+ENQ-00739,2024-11-03,Phone,Pricing Question,0.2,Agent_41,RK-0131,False
+ENQ-00740,2025-10-15,WhatsApp,General Enquiry,1.6,Agent_36,RK-0168,True
+ENQ-00741,2024-01-05,Email,General Enquiry,1.0,Agent_11,RK-0437,True
+ENQ-00742,2024-02-01,Phone,Viewing Request,0.6,Agent_27,RK-0212,False
+ENQ-00743,2024-11-13,WhatsApp,Viewing Request,2.3,Agent_42,RK-0189,False
+ENQ-00744,2024-05-21,Phone,Viewing Request,1.5,Agent_07,RK-0207,True
+ENQ-00745,2025-01-17,WhatsApp,General Enquiry,7.3,Agent_15,RK-0185,False
+ENQ-00746,2024-03-28,Phone,Pricing Question,3.3,Agent_31,RK-0040,False
+ENQ-00747,2025-05-17,WhatsApp,Complaint,0.5,Agent_27,RK-0175,False
+ENQ-00748,2025-01-24,Email,Viewing Request,1.0,Agent_20,RK-0301,False
+ENQ-00749,2025-08-27,WhatsApp,Availability Check,4.6,Agent_39,RK-0303,False
+ENQ-00750,2024-03-17,Email,Pricing Question,3.0,Agent_27,RK-0172,True
+ENQ-00751,2025-12-12,Contact Form,Viewing Request,1.6,Agent_40,RK-0465,False
+ENQ-00752,2025-04-21,Phone,Viewing Request,0.4,Agent_24,RK-0277,True
+ENQ-00753,2025-03-24,Email,Pricing Question,3.0,Agent_16,RK-0458,False
+ENQ-00754,2025-09-26,WhatsApp,Viewing Request,2.7,Agent_22,RK-0408,False
+ENQ-00755,2024-12-06,Phone,Pricing Question,1.9,Agent_39,RK-0069,True
+ENQ-00756,2025-01-15,Phone,General Enquiry,0.6,Agent_05,RK-0461,False
+ENQ-00757,2025-07-27,WhatsApp,Availability Check,0.5,Agent_42,RK-0496,False
+ENQ-00758,2025-05-30,Contact Form,Availability Check,27.7,Agent_15,RK-0245,False
+ENQ-00759,2025-07-08,WhatsApp,Availability Check,1.2,Agent_14,RK-0324,False
+ENQ-00760,2025-06-29,Phone,Availability Check,1.1,Agent_30,RK-0088,False
+ENQ-00761,2024-01-07,Email,General Enquiry,13.0,Agent_23,RK-0396,True
+ENQ-00762,2024-05-22,Phone,Pricing Question,0.1,Agent_15,RK-0014,False
+ENQ-00763,2025-04-08,Email,Availability Check,11.8,Agent_29,RK-0105,False
+ENQ-00764,2024-11-14,Phone,Availability Check,1.6,Agent_43,RK-0135,True
+ENQ-00765,2024-09-16,Phone,Pricing Question,0.3,Agent_16,RK-0041,False
+ENQ-00766,2024-09-11,Email,General Enquiry,1.0,Agent_43,RK-0245,False
+ENQ-00767,2025-03-28,Email,Viewing Request,1.4,Agent_03,RK-0329,True
+ENQ-00768,2025-04-23,Contact Form,Pricing Question,16.5,Agent_41,RK-0105,False
+ENQ-00769,2025-11-17,Email,Viewing Request,10.7,Agent_24,RK-0159,False
+ENQ-00770,2024-11-26,Contact Form,Pricing Question,5.9,Agent_03,RK-0495,False
+ENQ-00771,2025-02-18,WhatsApp,General Enquiry,6.3,Agent_25,RK-0320,False
+ENQ-00772,2024-04-14,Contact Form,Viewing Request,3.7,Agent_23,RK-0309,False
+ENQ-00773,2024-11-09,Phone,Pricing Question,4.0,Agent_26,RK-0027,False
+ENQ-00774,2025-11-16,Email,Complaint,1.6,Agent_03,RK-0371,False
+ENQ-00775,2025-07-25,WhatsApp,Viewing Request,5.9,Agent_39,RK-0456,False
+ENQ-00776,2024-04-20,Email,General Enquiry,6.3,Agent_45,RK-0494,False
+ENQ-00777,2024-05-07,WhatsApp,Pricing Question,2.8,Agent_47,RK-0090,False
+ENQ-00778,2024-11-28,Contact Form,Availability Check,6.5,Agent_49,RK-0098,False
+ENQ-00779,2025-12-11,Contact Form,Pricing Question,8.4,Agent_44,RK-0371,False
+ENQ-00780,2024-02-13,Contact Form,Pricing Question,4.8,Agent_26,RK-0144,False
+ENQ-00781,2025-12-06,Contact Form,Pricing Question,1.0,Agent_08,RK-0462,False
+ENQ-00782,2025-11-08,Email,Availability Check,1.0,Agent_19,RK-0028,False
+ENQ-00783,2024-06-23,Contact Form,Viewing Request,1.0,Agent_16,RK-0031,True
+ENQ-00784,2024-06-04,Email,Pricing Question,18.8,Agent_13,RK-0333,False
+ENQ-00785,2025-02-04,Email,Availability Check,3.0,Agent_22,RK-0375,False
+ENQ-00786,2024-12-18,Contact Form,Availability Check,2.5,Agent_28,RK-0074,True
+ENQ-00787,2024-03-30,Phone,Availability Check,0.6,Agent_35,RK-0465,False
+ENQ-00788,2025-08-20,Email,Viewing Request,2.4,Agent_37,RK-0461,False
+ENQ-00789,2024-11-30,WhatsApp,Viewing Request,3.0,Agent_44,RK-0060,False
+ENQ-00790,2025-07-13,Contact Form,General Enquiry,14.9,Agent_33,RK-0044,False
+ENQ-00791,2024-06-13,Phone,General Enquiry,1.1,Agent_02,RK-0287,False
+ENQ-00792,2024-10-12,Phone,Design Consultation,0.5,Agent_24,RK-0152,False
+ENQ-00793,2024-01-13,Email,General Enquiry,5.7,Agent_20,RK-0328,False
+ENQ-00794,2025-08-12,Contact Form,Viewing Request,1.0,Agent_21,RK-0111,False
+ENQ-00795,2025-06-18,Email,Viewing Request,10.6,Agent_12,RK-0320,False
+ENQ-00796,2024-11-20,Email,Viewing Request,7.5,Agent_37,RK-0448,False
+ENQ-00797,2024-11-29,WhatsApp,Pricing Question,0.7,Agent_38,RK-0120,False
+ENQ-00798,2024-10-30,WhatsApp,Viewing Request,4.9,Agent_31,RK-0377,False
+ENQ-00799,2024-08-22,WhatsApp,Design Consultation,0.5,Agent_46,RK-0393,False
+ENQ-00800,2024-07-31,WhatsApp,Pricing Question,0.5,Agent_06,RK-0309,False
+ENQ-00801,2024-09-17,Email,Design Consultation,3.3,Agent_42,RK-0222,False
+ENQ-00802,2025-06-21,Email,Pricing Question,4.8,Agent_23,RK-0117,True
+ENQ-00803,2024-11-04,Email,Pricing Question,26.7,Agent_32,RK-0358,False
+ENQ-00804,2024-09-12,Contact Form,Pricing Question,1.2,Agent_47,RK-0210,True
+ENQ-00805,2024-04-02,WhatsApp,Pricing Question,1.2,Agent_39,RK-0050,False
+ENQ-00806,2025-03-31,WhatsApp,Pricing Question,4.4,Agent_40,RK-0034,True
+ENQ-00807,2024-07-17,Contact Form,General Enquiry,3.4,Agent_33,RK-0033,False
+ENQ-00808,2025-02-23,Email,Pricing Question,2.2,Agent_24,RK-0214,False
+ENQ-00809,2024-08-03,Email,General Enquiry,2.9,Agent_11,RK-0288,False
+ENQ-00810,2024-07-16,WhatsApp,Availability Check,0.5,Agent_27,RK-0166,False
+ENQ-00811,2025-01-17,WhatsApp,Pricing Question,1.0,Agent_40,RK-0414,False
+ENQ-00812,2024-06-17,Contact Form,General Enquiry,2.2,Agent_25,RK-0194,True
+ENQ-00813,2025-02-05,Email,Availability Check,38.9,Agent_32,RK-0149,True
+ENQ-00814,2025-11-19,Contact Form,Viewing Request,9.4,Agent_44,RK-0462,True
+ENQ-00815,2024-04-28,Contact Form,Availability Check,1.0,Agent_30,RK-0455,False
+ENQ-00816,2024-02-15,WhatsApp,Viewing Request,3.6,Agent_08,RK-0003,False
+ENQ-00817,2024-06-05,Contact Form,General Enquiry,1.2,Agent_47,RK-0114,True
+ENQ-00818,2024-09-06,Email,Viewing Request,3.2,Agent_31,RK-0479,False
+ENQ-00819,2024-04-22,Phone,General Enquiry,2.5,Agent_15,RK-0016,False
+ENQ-00820,2025-01-10,WhatsApp,Availability Check,1.1,Agent_04,RK-0478,False
+ENQ-00821,2025-08-29,WhatsApp,Viewing Request,2.7,Agent_41,RK-0200,False
+ENQ-00822,2025-08-21,Contact Form,Pricing Question,1.4,Agent_04,RK-0084,False
+ENQ-00823,2025-07-13,WhatsApp,Availability Check,3.0,Agent_41,RK-0486,False
+ENQ-00824,2024-09-14,Email,Viewing Request,13.1,Agent_40,RK-0254,False
+ENQ-00825,2025-12-29,Phone,Availability Check,1.3,Agent_44,RK-0240,False
+ENQ-00826,2024-10-19,WhatsApp,Availability Check,3.8,Agent_23,RK-0142,False
+ENQ-00827,2025-09-29,Phone,Pricing Question,0.3,Agent_34,RK-0390,False
+ENQ-00828,2024-11-01,WhatsApp,Viewing Request,6.7,Agent_40,RK-0225,False
+ENQ-00829,2025-04-07,Phone,Viewing Request,0.4,Agent_23,RK-0040,False
+ENQ-00830,2024-06-27,WhatsApp,General Enquiry,0.8,Agent_20,RK-0481,False
+ENQ-00831,2024-12-08,Email,Availability Check,3.3,Agent_04,RK-0226,False
+ENQ-00832,2025-10-06,Email,Pricing Question,12.3,Agent_15,RK-0223,False
+ENQ-00833,2025-09-10,Email,Availability Check,8.7,Agent_21,RK-0137,False
+ENQ-00834,2025-11-08,Contact Form,Availability Check,9.1,Agent_15,RK-0321,False
+ENQ-00835,2025-06-15,Email,Availability Check,8.3,Agent_13,RK-0135,False
+ENQ-00836,2024-06-21,WhatsApp,Availability Check,3.0,Agent_11,RK-0287,True
+ENQ-00837,2025-08-12,WhatsApp,Availability Check,2.2,Agent_35,RK-0385,False
+ENQ-00838,2025-07-29,Email,Pricing Question,2.8,Agent_12,RK-0437,False
+ENQ-00839,2024-06-16,Email,General Enquiry,19.6,Agent_15,RK-0460,False
+ENQ-00840,2024-04-30,Phone,Availability Check,0.8,Agent_20,RK-0457,False
+ENQ-00841,2025-12-27,WhatsApp,General Enquiry,1.8,Agent_19,RK-0481,False
+ENQ-00842,2025-03-29,Email,General Enquiry,1.0,Agent_23,RK-0138,False
+ENQ-00843,2025-07-16,Email,Availability Check,1.0,Agent_27,RK-0057,False
+ENQ-00844,2025-11-08,Contact Form,Viewing Request,1.0,Agent_26,RK-0410,False
+ENQ-00845,2024-11-12,Contact Form,Design Consultation,1.0,Agent_17,RK-0150,False
+ENQ-00846,2025-06-05,Phone,Viewing Request,0.6,Agent_18,RK-0194,False
+ENQ-00847,2024-09-21,Email,Pricing Question,6.8,Agent_36,RK-0026,False
+ENQ-00848,2024-05-17,Email,Viewing Request,14.6,Agent_40,RK-0119,False
+ENQ-00849,2025-02-10,Email,Viewing Request,20.5,Agent_24,RK-0192,False
+ENQ-00850,2025-08-14,Contact Form,Pricing Question,2.3,Agent_13,RK-0108,True
+ENQ-00851,2025-03-22,Phone,Design Consultation,0.5,Agent_22,RK-0371,False
+ENQ-00852,2024-10-16,WhatsApp,Design Consultation,3.8,Agent_13,RK-0343,False
+ENQ-00853,2025-01-04,WhatsApp,Pricing Question,4.0,Agent_13,RK-0118,False
+ENQ-00854,2024-12-17,Email,Pricing Question,1.0,Agent_21,RK-0310,False
+ENQ-00855,2024-12-25,Contact Form,General Enquiry,2.7,Agent_23,RK-0150,False
+ENQ-00856,2024-04-29,Contact Form,Viewing Request,1.1,Agent_23,RK-0326,False
+ENQ-00857,2025-10-25,Email,General Enquiry,2.0,Agent_45,RK-0316,False
+ENQ-00858,2024-04-02,WhatsApp,Viewing Request,0.5,Agent_27,RK-0304,False
+ENQ-00859,2024-10-26,Phone,General Enquiry,2.0,Agent_02,RK-0253,False
+ENQ-00860,2025-01-03,Phone,Complaint,2.2,Agent_11,RK-0138,False
+ENQ-00861,2025-07-20,Phone,Viewing Request,1.4,Agent_23,RK-0430,False
+ENQ-00862,2024-06-22,Contact Form,Design Consultation,5.2,Agent_48,RK-0285,False
+ENQ-00863,2024-12-25,Contact Form,Viewing Request,26.1,Agent_50,RK-0021,False
+ENQ-00864,2025-08-29,Contact Form,Viewing Request,14.4,Agent_39,RK-0369,False
+ENQ-00865,2024-06-10,Email,Pricing Question,1.5,Agent_11,RK-0125,False
+ENQ-00866,2024-09-17,Email,Viewing Request,6.5,Agent_06,RK-0402,False
+ENQ-00867,2024-07-24,Contact Form,Complaint,13.7,Agent_17,RK-0379,False
+ENQ-00868,2024-03-05,Email,Viewing Request,4.6,Agent_24,RK-0028,False
+ENQ-00869,2024-09-29,Email,Viewing Request,2.1,Agent_48,RK-0136,True
+ENQ-00870,2025-05-29,Contact Form,Pricing Question,1.0,Agent_17,RK-0440,False
+ENQ-00871,2024-11-13,Phone,Viewing Request,0.4,Agent_01,RK-0089,False
+ENQ-00872,2025-11-22,WhatsApp,Pricing Question,0.7,Agent_12,RK-0318,False
+ENQ-00873,2025-11-16,Contact Form,General Enquiry,4.7,Agent_14,RK-0112,False
+ENQ-00874,2025-01-03,Email,Availability Check,9.3,Agent_19,RK-0227,False
+ENQ-00875,2024-11-20,Contact Form,Design Consultation,1.0,Agent_32,RK-0459,False
+ENQ-00876,2025-06-19,Contact Form,Viewing Request,12.5,Agent_44,RK-0190,False
+ENQ-00877,2024-07-14,Contact Form,Viewing Request,18.4,Agent_19,RK-0427,False
+ENQ-00878,2025-08-04,Contact Form,Viewing Request,1.0,Agent_03,RK-0003,False
+ENQ-00879,2025-10-24,Contact Form,Design Consultation,3.7,Agent_06,RK-0276,True
+ENQ-00880,2025-01-14,Email,Pricing Question,1.0,Agent_22,RK-0035,False
+ENQ-00881,2025-02-15,Contact Form,General Enquiry,5.4,Agent_46,RK-0037,False
+ENQ-00882,2024-12-12,Email,Availability Check,2.3,Agent_29,RK-0431,False
+ENQ-00883,2024-03-30,Email,Viewing Request,11.9,Agent_38,RK-0372,False
+ENQ-00884,2024-01-15,Contact Form,Pricing Question,1.6,Agent_17,RK-0128,False
+ENQ-00885,2025-11-18,Email,Viewing Request,2.7,Agent_26,RK-0072,False
+ENQ-00886,2025-01-17,Email,Viewing Request,13.3,Agent_04,RK-0484,False
+ENQ-00887,2024-09-29,Email,Viewing Request,4.3,Agent_38,RK-0357,False
+ENQ-00888,2025-09-24,Phone,General Enquiry,1.0,Agent_04,RK-0044,False
+ENQ-00889,2024-09-11,Email,Availability Check,6.4,Agent_18,RK-0417,False
+ENQ-00890,2025-05-16,Phone,General Enquiry,1.6,Agent_48,RK-0460,True
+ENQ-00891,2025-07-01,WhatsApp,Viewing Request,1.2,Agent_37,RK-0190,True
+ENQ-00892,2024-10-08,Contact Form,General Enquiry,4.0,Agent_04,RK-0128,False
+ENQ-00893,2025-08-30,WhatsApp,Pricing Question,2.4,Agent_43,RK-0440,False
+ENQ-00894,2024-01-08,WhatsApp,Design Consultation,0.7,Agent_22,RK-0272,False
+ENQ-00895,2025-08-16,Contact Form,Viewing Request,30.3,Agent_07,RK-0306,False
+ENQ-00896,2024-07-25,WhatsApp,Design Consultation,1.7,Agent_29,RK-0128,False
+ENQ-00897,2024-08-08,WhatsApp,Complaint,1.1,Agent_46,RK-0427,False
+ENQ-00898,2025-03-18,WhatsApp,Design Consultation,0.5,Agent_43,RK-0475,False
+ENQ-00899,2024-05-08,Email,Pricing Question,4.2,Agent_11,RK-0218,False
+ENQ-00900,2025-07-20,Email,Viewing Request,12.4,Agent_44,RK-0150,False
+ENQ-00901,2025-12-23,Contact Form,Design Consultation,1.0,Agent_19,RK-0434,False
+ENQ-00902,2025-07-18,WhatsApp,Availability Check,4.6,Agent_40,RK-0042,True
+ENQ-00903,2024-07-22,Email,Viewing Request,9.5,Agent_46,RK-0475,False
+ENQ-00904,2024-02-18,Email,Complaint,10.0,Agent_07,RK-0474,True
+ENQ-00905,2025-06-02,Phone,Viewing Request,0.6,Agent_07,RK-0213,False
+ENQ-00906,2025-09-04,WhatsApp,Viewing Request,3.0,Agent_39,RK-0249,False
+ENQ-00907,2025-05-30,Contact Form,Viewing Request,9.3,Agent_27,RK-0259,False
+ENQ-00908,2024-03-21,Email,Viewing Request,1.0,Agent_49,RK-0405,True
+ENQ-00909,2024-08-17,Email,Design Consultation,1.0,Agent_49,RK-0490,False
+ENQ-00910,2025-07-13,Email,Availability Check,2.5,Agent_38,RK-0134,False
+ENQ-00911,2024-05-12,Email,Availability Check,3.8,Agent_13,RK-0414,True
+ENQ-00912,2024-11-11,Email,General Enquiry,4.5,Agent_34,RK-0389,False
+ENQ-00913,2025-03-02,WhatsApp,Viewing Request,1.1,Agent_45,RK-0342,False
+ENQ-00914,2024-10-30,Email,Viewing Request,4.9,Agent_06,RK-0418,False
+ENQ-00915,2024-10-05,Phone,Viewing Request,0.9,Agent_32,RK-0154,True
+ENQ-00916,2025-06-09,Email,Pricing Question,7.9,Agent_22,RK-0016,False
+ENQ-00917,2024-09-09,Email,Pricing Question,16.4,Agent_17,RK-0289,False
+ENQ-00918,2025-04-18,Email,Design Consultation,5.3,Agent_04,RK-0497,False
+ENQ-00919,2025-09-18,WhatsApp,Viewing Request,5.4,Agent_16,RK-0022,False
+ENQ-00920,2025-03-21,Email,Pricing Question,7.2,Agent_05,RK-0208,False
+ENQ-00921,2024-03-05,Email,Viewing Request,1.0,Agent_24,RK-0476,False
+ENQ-00922,2024-06-11,Email,Viewing Request,1.0,Agent_16,RK-0309,False
+ENQ-00923,2025-05-25,Email,Design Consultation,1.5,Agent_28,RK-0254,False
+ENQ-00924,2025-01-20,Email,Pricing Question,7.6,Agent_18,RK-0054,False
+ENQ-00925,2024-01-12,Contact Form,Complaint,1.6,Agent_14,RK-0434,True
+ENQ-00926,2025-11-13,Contact Form,Viewing Request,9.6,Agent_17,RK-0445,False
+ENQ-00927,2025-06-05,WhatsApp,Viewing Request,0.7,Agent_42,RK-0269,False
+ENQ-00928,2024-12-24,WhatsApp,Viewing Request,1.4,Agent_13,RK-0204,False
+ENQ-00929,2024-01-02,Phone,General Enquiry,0.1,Agent_45,RK-0157,False
+ENQ-00930,2024-10-15,Contact Form,Availability Check,11.9,Agent_39,RK-0304,False
+ENQ-00931,2024-06-12,Email,Pricing Question,5.1,Agent_18,RK-0188,True
+ENQ-00932,2024-08-02,Contact Form,Pricing Question,14.0,Agent_19,RK-0047,False
+ENQ-00933,2025-04-19,WhatsApp,Availability Check,3.1,Agent_29,RK-0353,True
+ENQ-00934,2024-04-03,Contact Form,Design Consultation,17.1,Agent_20,RK-0008,False
+ENQ-00935,2024-09-24,Contact Form,Pricing Question,3.3,Agent_33,RK-0410,False
+ENQ-00936,2025-11-10,Contact Form,Pricing Question,16.4,Agent_02,RK-0065,True
+ENQ-00937,2024-09-28,Contact Form,Design Consultation,1.4,Agent_30,RK-0010,False
+ENQ-00938,2025-07-27,Email,Availability Check,1.2,Agent_21,RK-0461,False
+ENQ-00939,2025-05-16,Email,Availability Check,4.9,Agent_24,RK-0040,False
+ENQ-00940,2025-07-31,Email,Design Consultation,4.0,Agent_45,RK-0215,False
+ENQ-00941,2025-01-12,Email,Viewing Request,1.7,Agent_12,RK-0009,False
+ENQ-00942,2025-09-21,Email,Availability Check,11.9,Agent_50,RK-0388,False
+ENQ-00943,2025-09-25,Email,General Enquiry,5.0,Agent_28,RK-0375,True
+ENQ-00944,2024-07-11,Phone,Design Consultation,0.3,Agent_26,RK-0121,False
+ENQ-00945,2025-01-14,Contact Form,Viewing Request,3.9,Agent_13,RK-0485,False
+ENQ-00946,2024-06-11,WhatsApp,Pricing Question,0.8,Agent_04,RK-0173,False
+ENQ-00947,2024-03-04,WhatsApp,Viewing Request,3.3,Agent_23,RK-0458,False
+ENQ-00948,2024-09-15,Phone,Availability Check,1.6,Agent_35,RK-0280,False
+ENQ-00949,2024-10-22,Email,Viewing Request,3.8,Agent_21,RK-0375,False
+ENQ-00950,2025-01-03,Phone,Pricing Question,0.8,Agent_33,RK-0392,False
+ENQ-00951,2025-11-18,Email,Availability Check,6.6,Agent_42,RK-0437,False
+ENQ-00952,2025-03-26,WhatsApp,Availability Check,0.9,Agent_03,RK-0233,False
+ENQ-00953,2025-05-11,WhatsApp,Viewing Request,0.7,Agent_22,RK-0093,False
+ENQ-00954,2025-03-29,WhatsApp,Pricing Question,0.5,Agent_21,RK-0228,False
+ENQ-00955,2025-11-17,Contact Form,Availability Check,5.2,Agent_31,RK-0279,False
+ENQ-00956,2025-10-05,Email,General Enquiry,6.5,Agent_26,RK-0474,False
+ENQ-00957,2024-06-23,Contact Form,General Enquiry,27.3,Agent_14,RK-0195,False
+ENQ-00958,2024-11-01,WhatsApp,Viewing Request,6.9,Agent_04,RK-0164,True
+ENQ-00959,2025-05-09,WhatsApp,Viewing Request,3.8,Agent_11,RK-0411,False
+ENQ-00960,2024-03-26,Phone,General Enquiry,2.0,Agent_24,RK-0061,True
+ENQ-00961,2025-08-20,Phone,Viewing Request,0.3,Agent_13,RK-0178,False
+ENQ-00962,2024-11-02,Email,Viewing Request,10.1,Agent_14,RK-0237,False
+ENQ-00963,2024-02-19,WhatsApp,Viewing Request,0.5,Agent_24,RK-0488,False
+ENQ-00964,2024-05-23,Email,Viewing Request,11.0,Agent_44,RK-0448,False
+ENQ-00965,2024-10-01,WhatsApp,Availability Check,0.5,Agent_03,RK-0126,False
+ENQ-00966,2025-07-03,Email,General Enquiry,9.2,Agent_16,RK-0191,False
+ENQ-00967,2024-06-30,WhatsApp,Availability Check,8.0,Agent_12,RK-0165,False
+ENQ-00968,2025-10-03,Contact Form,Design Consultation,2.0,Agent_12,RK-0467,False
+ENQ-00969,2024-09-13,Email,Availability Check,22.4,Agent_09,RK-0140,False
+ENQ-00970,2025-02-02,Phone,Viewing Request,1.0,Agent_06,RK-0181,False
+ENQ-00971,2024-12-20,Contact Form,General Enquiry,2.5,Agent_19,RK-0327,False
+ENQ-00972,2024-10-22,Email,Viewing Request,4.2,Agent_36,RK-0209,False
+ENQ-00973,2025-01-27,WhatsApp,General Enquiry,2.3,Agent_20,RK-0105,True
+ENQ-00974,2024-01-27,Email,Viewing Request,1.0,Agent_20,RK-0301,False
+ENQ-00975,2025-06-27,Email,Availability Check,6.8,Agent_01,RK-0249,False
+ENQ-00976,2025-04-27,Phone,Design Consultation,0.2,Agent_04,RK-0114,False
+ENQ-00977,2024-07-14,Contact Form,Pricing Question,2.4,Agent_13,RK-0196,True
+ENQ-00978,2024-02-26,Email,General Enquiry,2.3,Agent_27,RK-0128,False
+ENQ-00979,2024-08-02,WhatsApp,Viewing Request,2.1,Agent_42,RK-0228,False
+ENQ-00980,2024-12-14,WhatsApp,Availability Check,0.7,Agent_19,RK-0157,False
+ENQ-00981,2025-06-13,Contact Form,Pricing Question,3.6,Agent_02,RK-0056,False
+ENQ-00982,2024-10-10,Email,Complaint,1.0,Agent_46,RK-0269,False
+ENQ-00983,2025-05-17,Contact Form,Viewing Request,45.1,Agent_15,RK-0186,False
+ENQ-00984,2025-09-09,WhatsApp,Viewing Request,1.6,Agent_17,RK-0361,False
+ENQ-00985,2025-11-27,Contact Form,Availability Check,28.9,Agent_12,RK-0071,False
+ENQ-00986,2025-08-13,Contact Form,Viewing Request,6.6,Agent_45,RK-0119,False
+ENQ-00987,2025-05-19,Contact Form,General Enquiry,13.1,Agent_39,RK-0489,False
+ENQ-00988,2025-07-02,Email,General Enquiry,1.5,Agent_28,RK-0442,False
+ENQ-00989,2024-03-23,Contact Form,Viewing Request,2.4,Agent_23,RK-0281,False
+ENQ-00990,2025-04-03,WhatsApp,Availability Check,1.6,Agent_34,RK-0102,False
+ENQ-00991,2024-11-20,Email,Design Consultation,3.7,Agent_31,RK-0372,False
+ENQ-00992,2025-07-13,Email,Design Consultation,1.0,Agent_18,RK-0411,False
+ENQ-00993,2024-03-20,WhatsApp,Complaint,2.6,Agent_26,RK-0028,False
+ENQ-00994,2025-05-23,Email,Pricing Question,1.3,Agent_32,RK-0486,False
+ENQ-00995,2025-07-22,Email,Viewing Request,1.0,Agent_23,RK-0273,True
+ENQ-00996,2025-03-31,WhatsApp,Pricing Question,8.4,Agent_22,RK-0108,False
+ENQ-00997,2024-01-15,Contact Form,Viewing Request,16.3,Agent_40,RK-0353,False
+ENQ-00998,2024-07-04,Email,Availability Check,8.3,Agent_01,RK-0041,False
+ENQ-00999,2025-02-23,WhatsApp,Viewing Request,0.8,Agent_23,RK-0444,False
+ENQ-01000,2025-04-07,WhatsApp,Availability Check,0.5,Agent_48,RK-0045,False
+ENQ-01001,2024-10-06,WhatsApp,Viewing Request,0.9,Agent_04,RK-0182,False
+ENQ-01002,2025-01-20,Contact Form,General Enquiry,6.0,Agent_26,RK-0340,False
+ENQ-01003,2025-01-10,Email,Design Consultation,11.3,Agent_37,RK-0297,False
+ENQ-01004,2025-05-07,WhatsApp,Design Consultation,5.8,Agent_24,RK-0422,False
+ENQ-01005,2025-09-20,WhatsApp,Viewing Request,4.2,Agent_05,RK-0114,True
+ENQ-01006,2024-02-28,Phone,Viewing Request,0.6,Agent_20,RK-0354,False
+ENQ-01007,2025-04-15,Email,Availability Check,8.8,Agent_39,RK-0401,False
+ENQ-01008,2025-11-18,Email,Pricing Question,9.0,Agent_46,RK-0103,False
+ENQ-01009,2024-12-15,Phone,Pricing Question,2.4,Agent_17,RK-0465,True
+ENQ-01010,2025-04-29,Email,Availability Check,10.9,Agent_50,RK-0037,False
+ENQ-01011,2025-09-26,Phone,Pricing Question,2.8,Agent_19,RK-0044,True
+ENQ-01012,2025-07-22,Phone,Design Consultation,2.6,Agent_34,RK-0267,False
+ENQ-01013,2024-04-29,Email,Viewing Request,1.0,Agent_30,RK-0394,False
+ENQ-01014,2025-10-09,Phone,Availability Check,0.1,Agent_16,RK-0361,False
+ENQ-01015,2025-12-16,WhatsApp,Availability Check,0.5,Agent_49,RK-0411,False
+ENQ-01016,2025-09-12,Phone,Complaint,0.2,Agent_05,RK-0097,False
+ENQ-01017,2024-01-08,Contact Form,Complaint,1.0,Agent_46,RK-0346,False
+ENQ-01018,2025-07-08,WhatsApp,Viewing Request,0.5,Agent_28,RK-0307,False
+ENQ-01019,2024-03-17,Contact Form,General Enquiry,4.2,Agent_24,RK-0164,False
+ENQ-01020,2025-09-12,Email,General Enquiry,19.7,Agent_05,RK-0345,False
+ENQ-01021,2024-07-01,Contact Form,Viewing Request,1.3,Agent_13,RK-0272,False
+ENQ-01022,2024-09-25,WhatsApp,General Enquiry,5.1,Agent_45,RK-0165,False
+ENQ-01023,2025-06-01,Email,Complaint,2.6,Agent_36,RK-0162,False
+ENQ-01024,2025-10-04,Email,General Enquiry,1.0,Agent_15,RK-0024,False
+ENQ-01025,2024-05-21,Contact Form,Viewing Request,7.7,Agent_20,RK-0371,True
+ENQ-01026,2024-07-26,Email,Viewing Request,3.7,Agent_09,RK-0283,False
+ENQ-01027,2024-04-06,Contact Form,Viewing Request,2.9,Agent_36,RK-0337,False
+ENQ-01028,2025-06-18,WhatsApp,Complaint,1.2,Agent_20,RK-0342,False
+ENQ-01029,2024-01-23,Contact Form,Pricing Question,1.5,Agent_17,RK-0429,True
+ENQ-01030,2024-01-15,Contact Form,Viewing Request,1.5,Agent_18,RK-0256,False
+ENQ-01031,2024-10-03,WhatsApp,Viewing Request,0.9,Agent_39,RK-0470,False
+ENQ-01032,2025-01-17,Phone,Viewing Request,1.8,Agent_38,RK-0489,False
+ENQ-01033,2025-08-05,Email,Viewing Request,4.6,Agent_41,RK-0484,False
+ENQ-01034,2025-03-16,Email,Availability Check,6.7,Agent_24,RK-0007,True
+ENQ-01035,2025-03-13,Phone,General Enquiry,0.5,Agent_20,RK-0078,False
+ENQ-01036,2025-11-20,Contact Form,General Enquiry,4.0,Agent_18,RK-0295,False
+ENQ-01037,2025-03-07,Email,Design Consultation,4.3,Agent_16,RK-0035,False
+ENQ-01038,2025-09-02,Contact Form,Availability Check,5.1,Agent_48,RK-0278,False
+ENQ-01039,2024-06-25,Contact Form,Pricing Question,5.5,Agent_22,RK-0025,False
+ENQ-01040,2025-04-01,Contact Form,Pricing Question,15.8,Agent_15,RK-0178,False
+ENQ-01041,2025-08-09,WhatsApp,Design Consultation,3.4,Agent_39,RK-0458,False
+ENQ-01042,2024-05-14,Phone,Pricing Question,0.2,Agent_47,RK-0036,True
+ENQ-01043,2024-12-26,Email,Viewing Request,5.9,Agent_50,RK-0008,True
+ENQ-01044,2025-07-08,WhatsApp,Complaint,3.3,Agent_23,RK-0115,False
+ENQ-01045,2024-04-08,Email,General Enquiry,4.5,Agent_41,RK-0072,False
+ENQ-01046,2024-08-18,WhatsApp,Pricing Question,2.1,Agent_49,RK-0422,False
+ENQ-01047,2024-09-19,Contact Form,General Enquiry,12.3,Agent_38,RK-0125,False
+ENQ-01048,2024-06-09,WhatsApp,Viewing Request,1.0,Agent_37,RK-0477,False
+ENQ-01049,2024-01-02,WhatsApp,Design Consultation,0.6,Agent_44,RK-0276,False
+ENQ-01050,2024-10-19,Contact Form,Availability Check,4.8,Agent_45,RK-0428,False
+ENQ-01051,2025-10-19,Contact Form,Viewing Request,3.6,Agent_42,RK-0413,False
+ENQ-01052,2024-04-16,Email,Viewing Request,27.3,Agent_20,RK-0202,False
+ENQ-01053,2024-01-13,WhatsApp,General Enquiry,1.2,Agent_24,RK-0245,False
+ENQ-01054,2024-12-19,Phone,Viewing Request,0.9,Agent_22,RK-0238,False
+ENQ-01055,2025-08-15,WhatsApp,Availability Check,3.3,Agent_01,RK-0139,False
+ENQ-01056,2024-12-20,Phone,General Enquiry,0.1,Agent_12,RK-0446,False
+ENQ-01057,2025-03-17,Email,General Enquiry,5.2,Agent_49,RK-0234,False
+ENQ-01058,2025-05-16,Contact Form,Pricing Question,3.8,Agent_17,RK-0026,False
+ENQ-01059,2024-03-17,Phone,Design Consultation,0.2,Agent_30,RK-0206,True
+ENQ-01060,2024-09-23,WhatsApp,General Enquiry,2.6,Agent_02,RK-0053,False
+ENQ-01061,2024-02-05,Contact Form,Viewing Request,2.3,Agent_15,RK-0224,False
+ENQ-01062,2025-05-25,Email,Complaint,2.4,Agent_14,RK-0297,False
+ENQ-01063,2025-03-03,Email,Availability Check,4.3,Agent_18,RK-0009,False
+ENQ-01064,2025-07-13,Email,Design Consultation,6.1,Agent_34,RK-0456,False
+ENQ-01065,2024-09-11,WhatsApp,Pricing Question,4.8,Agent_14,RK-0078,False
+ENQ-01066,2024-12-23,Email,Viewing Request,4.3,Agent_32,RK-0377,False
+ENQ-01067,2025-10-22,Email,Availability Check,3.5,Agent_30,RK-0386,True
+ENQ-01068,2025-09-11,WhatsApp,Viewing Request,1.6,Agent_20,RK-0343,False
+ENQ-01069,2024-11-09,Contact Form,Viewing Request,9.8,Agent_49,RK-0098,False
+ENQ-01070,2024-03-18,Phone,Availability Check,0.7,Agent_04,RK-0193,False
+ENQ-01071,2025-01-13,WhatsApp,Pricing Question,1.1,Agent_05,RK-0102,False
+ENQ-01072,2025-02-25,WhatsApp,General Enquiry,6.6,Agent_39,RK-0291,False
+ENQ-01073,2025-11-03,Email,Pricing Question,3.4,Agent_36,RK-0294,False
+ENQ-01074,2024-04-01,Phone,Availability Check,0.2,Agent_44,RK-0387,False
+ENQ-01075,2024-04-08,Email,Availability Check,13.5,Agent_12,RK-0258,False
+ENQ-01076,2025-06-05,Email,General Enquiry,17.9,Agent_35,RK-0368,True
+ENQ-01077,2024-07-31,Phone,General Enquiry,2.2,Agent_09,RK-0373,False
+ENQ-01078,2025-08-06,Phone,General Enquiry,0.4,Agent_24,RK-0488,False
+ENQ-01079,2024-08-11,Email,Complaint,7.5,Agent_49,RK-0418,False
+ENQ-01080,2025-12-22,Email,Availability Check,7.5,Agent_47,RK-0169,False
+ENQ-01081,2025-06-15,Phone,Viewing Request,0.3,Agent_36,RK-0036,False
+ENQ-01082,2025-06-23,Email,Pricing Question,6.6,Agent_35,RK-0359,False
+ENQ-01083,2024-08-15,WhatsApp,Viewing Request,1.0,Agent_29,RK-0500,False
+ENQ-01084,2025-09-17,Contact Form,Viewing Request,17.6,Agent_16,RK-0153,False
+ENQ-01085,2025-10-30,Phone,Pricing Question,0.3,Agent_39,RK-0026,False
+ENQ-01086,2025-12-01,WhatsApp,Design Consultation,5.8,Agent_34,RK-0312,False
+ENQ-01087,2025-04-17,WhatsApp,Pricing Question,15.2,Agent_18,RK-0012,False
+ENQ-01088,2024-04-18,Phone,Pricing Question,0.3,Agent_46,RK-0333,True
+ENQ-01089,2025-09-05,Email,Availability Check,5.6,Agent_14,RK-0357,False
+ENQ-01090,2024-06-15,Contact Form,Availability Check,22.8,Agent_40,RK-0161,True
+ENQ-01091,2025-06-14,Contact Form,Availability Check,15.3,Agent_19,RK-0307,False
+ENQ-01092,2024-12-11,Email,Viewing Request,5.3,Agent_19,RK-0481,False
+ENQ-01093,2025-10-30,Contact Form,Viewing Request,7.5,Agent_08,RK-0170,False
+ENQ-01094,2024-01-13,Email,Viewing Request,1.0,Agent_20,RK-0144,True
+ENQ-01095,2024-09-10,Email,Availability Check,11.0,Agent_22,RK-0488,False
+ENQ-01096,2025-03-21,Email,Viewing Request,10.7,Agent_23,RK-0367,False
+ENQ-01097,2025-12-28,WhatsApp,General Enquiry,3.1,Agent_25,RK-0026,False
+ENQ-01098,2025-03-04,Contact Form,Availability Check,5.5,Agent_09,RK-0236,False
+ENQ-01099,2025-11-15,WhatsApp,Availability Check,3.4,Agent_38,RK-0196,False
+ENQ-01100,2024-01-30,WhatsApp,Availability Check,0.5,Agent_30,RK-0213,True
+ENQ-01101,2025-07-25,WhatsApp,Complaint,0.5,Agent_48,RK-0230,False
+ENQ-01102,2024-05-24,Email,Complaint,7.2,Agent_38,RK-0140,False
+ENQ-01103,2025-09-16,WhatsApp,General Enquiry,1.6,Agent_21,RK-0023,False
+ENQ-01104,2024-12-04,Email,Pricing Question,4.1,Agent_23,RK-0219,False
+ENQ-01105,2024-12-21,Contact Form,Viewing Request,15.6,Agent_28,RK-0223,False
+ENQ-01106,2024-05-27,Email,Viewing Request,22.6,Agent_22,RK-0429,False
+ENQ-01107,2025-01-27,Contact Form,Pricing Question,3.0,Agent_32,RK-0450,False
+ENQ-01108,2024-09-07,Email,Pricing Question,18.9,Agent_46,RK-0043,False
+ENQ-01109,2024-02-15,Phone,Viewing Request,0.2,Agent_44,RK-0071,False
+ENQ-01110,2024-02-21,Contact Form,Pricing Question,1.0,Agent_38,RK-0355,False
+ENQ-01111,2025-04-22,WhatsApp,Availability Check,1.6,Agent_09,RK-0390,True
+ENQ-01112,2025-12-26,Contact Form,Availability Check,1.0,Agent_36,RK-0328,False
+ENQ-01113,2025-05-12,Phone,Pricing Question,0.4,Agent_32,RK-0098,False
+ENQ-01114,2024-12-16,Phone,Design Consultation,2.0,Agent_29,RK-0431,False
+ENQ-01115,2024-12-12,Phone,Availability Check,1.6,Agent_24,RK-0028,False
+ENQ-01116,2025-06-13,Email,Pricing Question,2.7,Agent_08,RK-0472,False
+ENQ-01117,2024-09-27,Contact Form,Pricing Question,10.0,Agent_12,RK-0210,False
+ENQ-01118,2025-03-06,WhatsApp,Viewing Request,1.4,Agent_28,RK-0249,False
+ENQ-01119,2025-10-28,WhatsApp,Design Consultation,0.6,Agent_50,RK-0221,False
+ENQ-01120,2025-03-16,Phone,Viewing Request,0.1,Agent_41,RK-0332,False
+ENQ-01121,2025-11-20,Phone,Pricing Question,0.4,Agent_10,RK-0239,False
+ENQ-01122,2024-12-22,WhatsApp,Viewing Request,2.3,Agent_24,RK-0026,False
+ENQ-01123,2024-12-11,WhatsApp,Design Consultation,2.2,Agent_48,RK-0205,False
+ENQ-01124,2025-08-05,Email,Viewing Request,9.8,Agent_23,RK-0455,False
+ENQ-01125,2024-01-27,WhatsApp,Viewing Request,0.8,Agent_40,RK-0263,False
+ENQ-01126,2024-03-24,Contact Form,Complaint,7.3,Agent_41,RK-0059,False
+ENQ-01127,2024-12-07,Phone,Viewing Request,0.5,Agent_08,RK-0113,False
+ENQ-01128,2025-12-28,Email,Design Consultation,1.0,Agent_02,RK-0347,False
+ENQ-01129,2025-09-06,Phone,Viewing Request,0.1,Agent_28,RK-0366,False
+ENQ-01130,2025-04-18,Email,Viewing Request,2.4,Agent_48,RK-0062,False
+ENQ-01131,2024-12-31,Contact Form,Availability Check,1.0,Agent_47,RK-0487,False
+ENQ-01132,2024-08-17,Email,General Enquiry,2.2,Agent_14,RK-0206,False
+ENQ-01133,2024-03-22,WhatsApp,Viewing Request,2.1,Agent_10,RK-0010,False
+ENQ-01134,2024-10-16,Email,Design Consultation,5.9,Agent_33,RK-0452,False
+ENQ-01135,2024-05-23,Phone,Design Consultation,0.9,Agent_25,RK-0441,False
+ENQ-01136,2025-10-12,Email,Pricing Question,4.0,Agent_27,RK-0340,True
+ENQ-01137,2024-11-07,Contact Form,Availability Check,16.8,Agent_39,RK-0368,False
+ENQ-01138,2024-02-11,WhatsApp,Availability Check,3.2,Agent_01,RK-0401,False
+ENQ-01139,2025-03-12,Email,Pricing Question,1.0,Agent_46,RK-0360,False
+ENQ-01140,2024-04-13,WhatsApp,Viewing Request,0.9,Agent_17,RK-0193,True
+ENQ-01141,2024-06-02,Email,Complaint,5.5,Agent_05,RK-0293,True
+ENQ-01142,2025-09-02,Email,Viewing Request,2.9,Agent_16,RK-0020,False
+ENQ-01143,2025-03-01,Contact Form,Pricing Question,5.3,Agent_09,RK-0459,False
+ENQ-01144,2025-04-14,Email,Viewing Request,1.0,Agent_21,RK-0458,False
+ENQ-01145,2024-11-24,Email,General Enquiry,1.1,Agent_42,RK-0321,False
+ENQ-01146,2024-06-30,Email,Design Consultation,1.0,Agent_26,RK-0437,False
+ENQ-01147,2024-08-27,Phone,Availability Check,1.1,Agent_31,RK-0012,False
+ENQ-01148,2024-12-01,WhatsApp,Availability Check,3.1,Agent_25,RK-0291,False
+ENQ-01149,2025-03-14,Contact Form,General Enquiry,9.6,Agent_08,RK-0192,False
+ENQ-01150,2025-05-30,Email,Complaint,1.1,Agent_16,RK-0154,False
+ENQ-01151,2025-03-27,Email,Viewing Request,1.0,Agent_19,RK-0270,False
+ENQ-01152,2025-02-02,Contact Form,Viewing Request,5.7,Agent_14,RK-0265,False
+ENQ-01153,2025-02-01,Contact Form,Design Consultation,1.0,Agent_40,RK-0129,False
+ENQ-01154,2024-08-28,Email,Viewing Request,15.5,Agent_07,RK-0135,False
+ENQ-01155,2025-01-20,Phone,Design Consultation,0.7,Agent_14,RK-0389,True
+ENQ-01156,2024-09-17,Email,Availability Check,9.9,Agent_32,RK-0036,False
+ENQ-01157,2024-10-04,Phone,Pricing Question,0.1,Agent_17,RK-0202,True
+ENQ-01158,2024-07-28,Email,Design Consultation,6.0,Agent_16,RK-0306,True
+ENQ-01159,2024-07-26,Phone,Complaint,1.4,Agent_05,RK-0341,False
+ENQ-01160,2025-09-12,Contact Form,Viewing Request,21.5,Agent_18,RK-0093,False
+ENQ-01161,2024-10-20,WhatsApp,Availability Check,3.6,Agent_19,RK-0120,False
+ENQ-01162,2024-03-06,WhatsApp,Viewing Request,0.6,Agent_34,RK-0158,False
+ENQ-01163,2024-02-02,Email,Pricing Question,1.1,Agent_07,RK-0313,False
+ENQ-01164,2024-03-19,Contact Form,Design Consultation,8.5,Agent_38,RK-0260,False
+ENQ-01165,2025-09-11,WhatsApp,General Enquiry,0.5,Agent_11,RK-0013,False
+ENQ-01166,2024-10-07,Phone,General Enquiry,0.1,Agent_18,RK-0010,False
+ENQ-01167,2024-02-19,WhatsApp,Pricing Question,10.6,Agent_30,RK-0082,True
+ENQ-01168,2024-11-28,Contact Form,Viewing Request,20.5,Agent_33,RK-0230,False
+ENQ-01169,2024-04-09,Phone,Pricing Question,0.2,Agent_32,RK-0093,False
+ENQ-01170,2024-08-07,Phone,Pricing Question,0.1,Agent_46,RK-0009,False
+ENQ-01171,2025-01-04,Phone,General Enquiry,1.7,Agent_35,RK-0122,False
+ENQ-01172,2024-11-26,Contact Form,Viewing Request,6.3,Agent_20,RK-0092,True
+ENQ-01173,2025-04-11,Phone,Pricing Question,1.2,Agent_46,RK-0418,False
+ENQ-01174,2025-06-13,Contact Form,Design Consultation,18.2,Agent_11,RK-0062,False
+ENQ-01175,2024-10-14,Email,Availability Check,8.6,Agent_10,RK-0470,False
+ENQ-01176,2025-06-17,Contact Form,Viewing Request,20.5,Agent_46,RK-0379,False
+ENQ-01177,2024-11-29,Contact Form,Availability Check,7.2,Agent_12,RK-0061,False
+ENQ-01178,2024-04-04,Email,Viewing Request,1.0,Agent_25,RK-0069,False
+ENQ-01179,2025-09-18,WhatsApp,General Enquiry,2.0,Agent_41,RK-0263,False
+ENQ-01180,2025-01-05,WhatsApp,Viewing Request,2.5,Agent_19,RK-0313,True
+ENQ-01181,2025-05-04,Contact Form,Viewing Request,6.3,Agent_10,RK-0107,False
+ENQ-01182,2024-03-02,WhatsApp,Pricing Question,2.2,Agent_29,RK-0342,False
+ENQ-01183,2025-05-01,Phone,General Enquiry,1.1,Agent_32,RK-0266,True
+ENQ-01184,2024-05-30,WhatsApp,Viewing Request,7.1,Agent_03,RK-0341,True
+ENQ-01185,2024-07-11,Contact Form,Viewing Request,9.8,Agent_44,RK-0063,False
+ENQ-01186,2025-12-23,Contact Form,Design Consultation,12.8,Agent_28,RK-0398,False
+ENQ-01187,2025-05-26,Contact Form,Viewing Request,27.6,Agent_42,RK-0052,False
+ENQ-01188,2024-07-07,WhatsApp,Pricing Question,3.7,Agent_44,RK-0165,False
+ENQ-01189,2024-11-30,Email,Design Consultation,11.1,Agent_32,RK-0033,False
+ENQ-01190,2025-05-10,Phone,Pricing Question,0.9,Agent_23,RK-0424,False
+ENQ-01191,2024-05-24,WhatsApp,Viewing Request,5.9,Agent_22,RK-0271,True
+ENQ-01192,2025-05-12,Email,Pricing Question,5.7,Agent_27,RK-0113,False
+ENQ-01193,2025-03-27,Phone,Complaint,0.6,Agent_15,RK-0404,True
+ENQ-01194,2024-12-04,Email,Viewing Request,13.7,Agent_44,RK-0419,False
+ENQ-01195,2025-11-16,Contact Form,Pricing Question,4.6,Agent_40,RK-0259,False
+ENQ-01196,2024-01-23,WhatsApp,Complaint,4.7,Agent_14,RK-0302,False
+ENQ-01197,2024-11-02,Phone,Availability Check,0.1,Agent_04,RK-0206,True
+ENQ-01198,2025-02-11,WhatsApp,Pricing Question,4.0,Agent_15,RK-0157,False
+ENQ-01199,2025-01-21,Email,General Enquiry,5.9,Agent_10,RK-0289,True
+ENQ-01200,2024-05-19,Contact Form,General Enquiry,21.1,Agent_32,RK-0400,False

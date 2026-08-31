@@ -1,0 +1,72 @@
+[
+  {
+    "input": {
+      "property_type": "Apartment",
+      "district": "Hamburg-Eimsbüttel",
+      "size_sqm": 85,
+      "rooms": 3,
+      "floor": 2,
+      "total_floors": 5,
+      "features": ["balcony", "fitted kitchen", "hardwood floors"],
+      "energy_class": "B",
+      "asking_price": 385000,
+      "target_audience": "young professionals"
+    }
+  },
+  {
+    "input": {
+      "property_type": "House",
+      "district": "Hamburg-Blankenese",
+      "size_sqm": 210,
+      "rooms": 6,
+      "floor": null,
+      "total_floors": 2,
+      "features": ["garden", "garage", "fireplace", "terrace"],
+      "energy_class": "C",
+      "asking_price": 1250000,
+      "target_audience": "families"
+    }
+  },
+  {
+    "input": {
+      "property_type": "Commercial",
+      "district": "Hamburg-HafenCity",
+      "size_sqm": 180,
+      "rooms": 4,
+      "floor": 3,
+      "total_floors": 8,
+      "features": ["open plan", "meeting room", "harbor view"],
+      "energy_class": "A",
+      "asking_price": 650000,
+      "target_audience": "SME companies"
+    }
+  },
+  {
+    "input": {
+      "property_type": "Studio",
+      "district": "Hamburg-St. Pauli",
+      "size_sqm": 32,
+      "rooms": 1,
+      "floor": 4,
+      "total_floors": 6,
+      "features": ["built-in storage", "modern bathroom"],
+      "energy_class": "B",
+      "asking_price": 165000,
+      "target_audience": "students or investors"
+    }
+  },
+  {
+    "input": {
+      "property_type": "Penthouse",
+      "district": "Hamburg-Eppendorf",
+      "size_sqm": 145,
+      "rooms": 4,
+      "floor": 7,
+      "total_floors": 7,
+      "features": ["roof terrace", "floor-to-ceiling windows", "2 bathrooms", "private elevator"],
+      "energy_class": "A+",
+      "asking_price": 980000,
+      "target_audience": "luxury buyers"
+    }
+  }
+]

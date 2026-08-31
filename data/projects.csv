@@ -1,0 +1,81 @@
+project_id,project_type,district,start_date,duration_weeks,budget_eur,status,designer_id,brief_hours
+PROJ-001,Show Apartment Staging,Hamburg-Ottensen,2024-12-21,8,137700,Pending Approval,Designer_19,1.6
+PROJ-002,Show Apartment Staging,Hamburg-Barmbek,2024-03-13,4,81600,Pending Approval,Designer_01,3.8
+PROJ-003,New Build Interior,Hamburg-Ottensen,2024-09-15,13,129700,Pending Approval,Designer_02,2.3
+PROJ-004,Office Fit-Out,Hamburg-Eimsbüttel,2024-01-10,10,142800,On Hold,Designer_14,1.6
+PROJ-005,Residential Renovation,Hamburg-HafenCity,2025-06-29,12,98100,Active,Designer_09,1.6
+PROJ-006,Retail Space Design,Hamburg-Ottensen,2024-10-25,15,68300,Pending Approval,Designer_11,3.8
+PROJ-007,Office Fit-Out,Hamburg-Bergedorf,2024-10-27,7,103700,Active,Designer_08,2.6
+PROJ-008,Residential Renovation,Hamburg-Eimsbüttel,2024-02-20,19,90200,Active,Designer_12,3.6
+PROJ-009,Office Fit-Out,Hamburg-Barmbek,2024-10-24,7,16500,Completed,Designer_16,3.4
+PROJ-010,New Build Interior,Hamburg-Barmbek,2025-02-18,12,128100,Completed,Designer_08,2.5
+PROJ-011,New Build Interior,Hamburg-HafenCity,2025-01-01,19,51500,On Hold,Designer_09,3.7
+PROJ-012,Retail Space Design,Hamburg-Barmbek,2024-10-30,7,15900,Active,Designer_15,4.0
+PROJ-013,New Build Interior,Hamburg-Winterhude,2024-09-17,5,102100,On Hold,Designer_13,4.0
+PROJ-014,Residential Renovation,Hamburg-Harburg,2024-03-26,5,135400,On Hold,Designer_16,4.5
+PROJ-015,Retail Space Design,Hamburg-HafenCity,2024-12-03,5,144000,Active,Designer_13,2.2
+PROJ-016,Residential Renovation,Hamburg-Eimsbüttel,2024-06-24,8,23600,Pending Approval,Designer_18,1.8
+PROJ-017,Retail Space Design,Hamburg-Eppendorf,2024-02-24,17,98400,Completed,Designer_06,2.3
+PROJ-018,Office Fit-Out,Hamburg-Harburg,2025-08-25,4,19500,Active,Designer_13,2.1
+PROJ-019,Show Apartment Staging,Hamburg-Barmbek,2024-09-23,9,147700,Completed,Designer_03,3.0
+PROJ-020,Residential Renovation,Hamburg-Barmbek,2025-06-23,19,127800,Completed,Designer_11,4.4
+PROJ-021,New Build Interior,Hamburg-Wandsbek,2024-02-15,9,23500,On Hold,Designer_17,4.2
+PROJ-022,Show Apartment Staging,Hamburg-Blankenese,2024-01-01,12,34400,Completed,Designer_05,1.6
+PROJ-023,Residential Renovation,Hamburg-Winterhude,2024-10-01,15,52700,Pending Approval,Designer_12,3.5
+PROJ-024,Show Apartment Staging,Hamburg-Bergedorf,2025-03-13,19,133300,Completed,Designer_16,3.2
+PROJ-025,New Build Interior,Hamburg-Eppendorf,2024-02-14,16,106400,Completed,Designer_07,3.8
+PROJ-026,Office Fit-Out,Hamburg-Blankenese,2024-10-28,7,112400,Active,Designer_07,3.3
+PROJ-027,Office Fit-Out,Hamburg-Ottensen,2024-07-25,7,136700,Active,Designer_02,3.2
+PROJ-028,New Build Interior,Hamburg-Wandsbek,2025-10-24,16,143300,Active,Designer_17,2.4
+PROJ-029,Residential Renovation,Hamburg-Altona,2025-05-28,7,42000,Active,Designer_08,1.8
+PROJ-030,Retail Space Design,Hamburg-Ottensen,2025-08-23,13,72000,On Hold,Designer_08,3.0
+PROJ-031,Office Fit-Out,Hamburg-Winterhude,2024-10-09,11,43300,Completed,Designer_15,1.9
+PROJ-032,New Build Interior,Hamburg-Ottensen,2024-03-21,11,30200,Completed,Designer_09,4.3
+PROJ-033,Office Fit-Out,Hamburg-Barmbek,2024-08-30,10,83400,Completed,Designer_03,2.3
+PROJ-034,Show Apartment Staging,Hamburg-Blankenese,2024-11-12,4,124200,Completed,Designer_02,2.0
+PROJ-035,New Build Interior,Hamburg-St. Pauli,2024-06-03,19,126000,Completed,Designer_11,2.6
+PROJ-036,Residential Renovation,Hamburg-Ottensen,2024-10-09,6,30100,Active,Designer_05,2.7
+PROJ-037,Residential Renovation,Hamburg-St. Pauli,2025-08-13,6,58100,Completed,Designer_15,3.8
+PROJ-038,Office Fit-Out,Hamburg-Harburg,2024-09-03,13,106700,Active,Designer_03,2.2
+PROJ-039,Residential Renovation,Hamburg-Altona,2025-04-06,19,105400,On Hold,Designer_16,2.2
+PROJ-040,Office Fit-Out,Hamburg-St. Pauli,2024-06-02,15,98600,Completed,Designer_20,4.1
+PROJ-041,Office Fit-Out,Hamburg-Bergedorf,2024-09-29,13,143800,Active,Designer_01,2.9
+PROJ-042,Retail Space Design,Hamburg-Altona,2025-04-17,7,118100,On Hold,Designer_19,3.3
+PROJ-043,Office Fit-Out,Hamburg-HafenCity,2024-04-04,16,95600,Pending Approval,Designer_20,1.9
+PROJ-044,Office Fit-Out,Hamburg-Wandsbek,2024-05-10,10,35900,Completed,Designer_07,2.9
+PROJ-045,Office Fit-Out,Hamburg-Ottensen,2024-06-17,9,33300,Completed,Designer_05,3.0
+PROJ-046,Residential Renovation,Hamburg-Winterhude,2024-10-23,7,53900,Active,Designer_06,1.7
+PROJ-047,Residential Renovation,Hamburg-Wandsbek,2024-07-11,4,112000,Completed,Designer_11,3.3
+PROJ-048,Retail Space Design,Hamburg-Harburg,2024-12-06,6,113400,Active,Designer_20,3.6
+PROJ-049,Show Apartment Staging,Hamburg-Winterhude,2025-09-22,11,104800,Completed,Designer_05,2.8
+PROJ-050,Retail Space Design,Hamburg-Barmbek,2025-08-18,12,24800,Completed,Designer_15,2.8
+PROJ-051,Retail Space Design,Hamburg-HafenCity,2024-02-06,19,124600,Active,Designer_03,3.4
+PROJ-052,New Build Interior,Hamburg-Altona,2024-12-30,10,50400,Completed,Designer_10,3.4
+PROJ-053,Residential Renovation,Hamburg-Altona,2025-09-04,7,104600,Active,Designer_13,4.1
+PROJ-054,Retail Space Design,Hamburg-St. Pauli,2024-06-15,15,24300,Pending Approval,Designer_17,3.6
+PROJ-055,Show Apartment Staging,Hamburg-Bergedorf,2025-06-05,19,17700,Completed,Designer_20,2.1
+PROJ-056,Show Apartment Staging,Hamburg-Winterhude,2024-06-17,18,62400,Completed,Designer_13,4.5
+PROJ-057,Retail Space Design,Hamburg-Ottensen,2025-09-05,16,118200,Pending Approval,Designer_11,3.1
+PROJ-058,Retail Space Design,Hamburg-Winterhude,2024-08-13,7,117300,Completed,Designer_18,3.9
+PROJ-059,New Build Interior,Hamburg-Eppendorf,2024-05-17,12,148500,On Hold,Designer_01,1.8
+PROJ-060,Show Apartment Staging,Hamburg-Barmbek,2025-05-11,14,123400,Completed,Designer_14,4.3
+PROJ-061,Office Fit-Out,Hamburg-Winterhude,2024-10-05,14,112400,Pending Approval,Designer_14,3.4
+PROJ-062,Retail Space Design,Hamburg-Winterhude,2024-10-11,10,40000,Completed,Designer_13,3.0
+PROJ-063,Office Fit-Out,Hamburg-Eimsbüttel,2025-01-12,17,19500,Completed,Designer_17,4.4
+PROJ-064,Retail Space Design,Hamburg-Eppendorf,2025-08-04,11,90700,Active,Designer_10,4.2
+PROJ-065,Office Fit-Out,Hamburg-Wandsbek,2025-02-26,7,90000,Active,Designer_04,1.8
+PROJ-066,Office Fit-Out,Hamburg-Wandsbek,2025-05-09,15,18700,Active,Designer_16,1.6
+PROJ-067,Retail Space Design,Hamburg-HafenCity,2024-09-18,13,132900,Active,Designer_09,3.9
+PROJ-068,Residential Renovation,Hamburg-Winterhude,2025-06-10,8,142200,Active,Designer_08,2.5
+PROJ-069,Show Apartment Staging,Hamburg-Barmbek,2025-11-27,12,90600,Active,Designer_04,1.8
+PROJ-070,Office Fit-Out,Hamburg-Bergedorf,2025-05-06,10,51600,Completed,Designer_07,3.7
+PROJ-071,New Build Interior,Hamburg-Winterhude,2024-02-08,15,31300,On Hold,Designer_14,3.0
+PROJ-072,Office Fit-Out,Hamburg-Ottensen,2025-06-25,13,47600,Pending Approval,Designer_03,3.0
+PROJ-073,Retail Space Design,Hamburg-Blankenese,2025-10-15,18,89200,Completed,Designer_08,2.9
+PROJ-074,Show Apartment Staging,Hamburg-Winterhude,2024-05-29,11,58900,Completed,Designer_11,3.0
+PROJ-075,Residential Renovation,Hamburg-Blankenese,2024-01-30,18,130000,Completed,Designer_09,4.3
+PROJ-076,Office Fit-Out,Hamburg-Ottensen,2024-10-09,16,132200,Completed,Designer_19,2.0
+PROJ-077,New Build Interior,Hamburg-Eppendorf,2024-05-28,6,149100,Completed,Designer_07,2.5
+PROJ-078,Office Fit-Out,Hamburg-Wandsbek,2025-02-18,10,107200,Completed,Designer_04,3.9
+PROJ-079,Office Fit-Out,Hamburg-Eimsbüttel,2025-07-11,16,27900,Completed,Designer_04,2.9
+PROJ-080,Office Fit-Out,Hamburg-Harburg,2024-05-15,13,100500,Completed,Designer_06,2.5
