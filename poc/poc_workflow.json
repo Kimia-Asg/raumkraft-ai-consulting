@@ -1,0 +1,142 @@
+{
+  "name": "RaumKraft Listing Generator POC",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "2da4c0fb-94d3-4b64-a7a4-714caa35d957",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "80b3491d-b5a6-47e5-a2ca-5fbf58a03cb0",
+      "name": "Webhook",
+      "webhookId": "2da4c0fb-94d3-4b64-a7a4-714caa35d957"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "b67c7284-9527-4206-a418-075fe49e606a",
+              "name": "property_type",
+              "value": "Apartment",
+              "type": "string"
+            },
+            {
+              "id": "e522cd1f-ed7b-40db-8f40-ca6742aa03fb",
+              "name": "district",
+              "value": "Hamburg-Eimsbüttel",
+              "type": "string"
+            },
+            {
+              "id": "feb10ff4-7838-460c-bf08-e7e4321112e3",
+              "name": "size_sqm",
+              "value": "85",
+              "type": "string"
+            },
+            {
+              "id": "e11c404d-63de-4e39-97c7-7e148d55245d",
+              "name": "rooms",
+              "value": "3",
+              "type": "string"
+            },
+            {
+              "id": "417705e2-43e2-4261-b981-764609d86576",
+              "name": "asking_price",
+              "value": "385000",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        208,
+        0
+      ],
+      "id": "83343559-819a-4af4-b7bd-f0224e0fc51c",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "gpt-4o-mini",
+          "mode": "list",
+          "cachedResultName": "GPT-4O-MINI"
+        },
+        "responses": {
+          "values": [
+            {
+              "role": "system",
+              "content": "You are a copywriter for RaumKraft Immobilien & Design, a premium German real estate and interior design firm. Write property listings in German that are:\n- Professional but warm — not robotic, not overly salesy\n- Factually accurate — use ONLY the data provided, never invent features\n- Structured: headline, lifestyle paragraph, key facts, neighbourhood note, CTA\n- Length: 150–200 words\n- Mention energy class naturally\n- If target audience is specified, subtly tailor the tone\n\nNever fabricate amenities, transportation connections, or neighbourhood details not provided in the input. If information is missing, omit it — do not guess."
+            },
+            {
+              "content": "=Property type: {{ $json.property_type }}\nDistrict: {{ $json.district }}\nSize: {{ $json.size_sqm }} sqm\nRooms: {{ $json.rooms }}\nAsking price: €{{ $json.asking_price }}"
+            }
+          ]
+        },
+        "builtInTools": {},
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 2.1,
+      "position": [
+        416,
+        0
+      ],
+      "id": "e75835ca-e4a7-444e-b312-83ae1de1e420",
+      "name": "Message a model",
+      "credentials": {
+        "openAiApi": {
+          "id": "I17sngH5f78OqdDh",
+          "name": "Kimi OpenAI"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "Message a model",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "aaa430c7-9d83-4420-8f2f-4def36d3f4cc",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "00cafa1eb8a383ac595b6bbf54c5f8acd05d9d1462911bd4a0edac031509b829"
+  },
+  "id": "CmLESuxssCJ0LHyP",
+  "tags": []
+}
