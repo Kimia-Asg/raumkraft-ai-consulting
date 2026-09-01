@@ -50,3 +50,6 @@ cp .env.example .env
 - **OpenAI API** — LLM integration in POC
 
 
+## Link to Dashboard
+https://public.tableau.com/authoring/RaumKraftAIDashboard/ListingDashboard#1
+https://public.tableau.com/authoring/RaumKraftAIDashboard/EnquiryDashboard#1
