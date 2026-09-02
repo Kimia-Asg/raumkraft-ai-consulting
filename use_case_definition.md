@@ -4,7 +4,7 @@
 
 RaumKraft Immobilien & Design is a mid-sized German firm combining real estate brokerage with in-house interior design services. The company faces three operational bottlenecks:
 
-1. **Slow listing production:** eal state agents spend 30–45 minutes writing each property listing manually. With ~200 listings per month, the average time from data entry to publication is 11 days — creating delays that cost competitive advantage in a fast-moving market.
+1. **Slow listing production:** Agents spend 30–45 minutes writing each property **sales** listing manually. With ~200 listings per month, the average time from data entry to publication is 11 days — creating delays that cost competitive advantage in a fast-moving sales market.
 
 2. **Slow enquiry response:** The company receives 1,200+ enquiries per month across email and contact forms. Average response time is 5–7 hours, far above the internal target of 2 hours. 69% of these enquiries are routine (viewing requests, pricing questions) and follow predictable patterns.
 
@@ -25,15 +25,13 @@ CEO Chleo's primary concern: **"AI is not transparent."** Any solution must demo
 | Monthly enquiries | ~1,200 |
 | Active design projects | ~23 |
 
-**Benchmark note:** RaumKraft is a fictional company, but its profile is benchmarked against mid-sized German real estate firms. Germany has ~37,000 real estate companies, with mid-sized brokerages typically employing 50–200 staff and handling 150–300 listings per month. Revenue figures are modelled on publicly reported ranges for regional firms combining brokerage with ancillary services (interior design, property management). Property data used for AI testing is real-world data sourced from Kaggle (Germany Housing - Rent and Price dataset, originally from ImmobilienScout24).
-
 ## 3. Proposed AI Solutions
 
 ### UC1 — Property Listing Generator (PRIMARY)
 
 **Type:** Natural language generation (NLG)
 
-**Flow:** Structured property data (size, rooms, location, energy class, features) → LLM generates a polished German listing (headline, lifestyle paragraph, key facts, neighbourhood note, CTA, 150–200 words) → agent reviews and edits in the app → publish.
+**Flow:** Structured property data (size, rooms, location, energy class, features, asking price) → LLM generates a polished German **sales** listing (headline, lifestyle paragraph, key facts, neighbourhood note, CTA, 150–200 words) → agent reviews and edits in the app → publish.
 
 **AI model:** GPT-4o-mini via OpenAI API
 
@@ -43,19 +41,28 @@ CEO Chleo's primary concern: **"AI is not transparent."** Any solution must demo
 
 **Type:** Text classification + response generation
 
-**Flow:** Incoming client enquiry (email, contact form) → AI classifies by type (viewing request, pricing question, general info, complaint, interior design enquiry) and urgency (high/medium/low) → AI drafts a response → human agent reviews and approves before sending.
+**Flow:** Incoming enquiry (email, contact form) → AI classifies by type (viewing request, pricing question, general info, complaint, interior design enquiry) and urgency (high/medium/low) → AI drafts a response → human agent reviews and approves before sending.
 
 **AI model:** GPT-4o-mini via OpenAI API
 
 **Key constraint:** AI never sends anything autonomously. Every draft response requires human approval.
 
-### UC3 — Interior Design Brief Generator + Mood Board (FUTURE)
+### UC3 — Interior Design Brief Generator + Mood Board Concept (BUILT)
 
-**Type:** Text extraction + structuring; generative AI for visual concepts
+**Type:** Text extraction + structuring (GPT-4o-mini); vision-based design concept generation (Google Gemini 3.6 Flash)
 
-**Flow:** Meeting notes from client consultation → AI extracts and structures into a formal design brief (room, style, budget, constraints, timeline) → designer reviews and refines.
+**Flow:**
+1. Meeting notes from client consultation pasted into the app
+2. AI extracts and structures a formal design brief (room, style, budget, constraints, timeline)
+3. AI detects which rooms need redesigning and generates a **tailored image-generation prompt per room**
+4. Designer uploads a photo of each room
+5. Google Gemini analyzes the room photo + brief → produces a **professional text-based design concept** (color palette, furniture, materials, layout recommendations)
+6. The prompt + design concept serve as the designer's foundation to create the mood board and design document
 
-**Nice-to-have extension:** The extracted brief data + a photo of the room are fed to a generative AI, which returns two decoration and furniture ideas. The client picks their preferred option, and that choice shapes the full design brief going forward.
+**Obstacles encountered:**
+1. **Google Gemini image generation unavailable in Germany via API** — geo-restricted. MVP uses Gemini's vision + text capability instead (analyzes room photo, returns detailed design concept). Production: route via supported region.
+2. **OpenAI DALL-E too expensive** (~€0.04–0.08/image) at scale.
+3. **Chosen approach:** Per-room professional text prompts + Gemini design concept. Designer can copy prompt into Nano Banana or any external image generator for visual mood board.
 
 ## 4. Key Stakeholders and Interests
 
@@ -83,7 +90,7 @@ CEO Chleo's primary concern: **"AI is not transparent."** Any solution must demo
 
 - **No autonomous publishing:** AI never publishes a listing or sends a response without human approval.
 - **No personal data processing in the MVP:** The MVP uses structured property data and anonymised enquiry text only. Production deployment requires full GDPR implementation (see `gdpr_documentation.md`).
-- **No image generation in UC1/UC2:** Visual content (photos, floor plans) remains a manual process. Image generation is explored only in UC3 as a future extension.
+- **No AI image generation in MVP:** Google Gemini image generation is geo-restricted in Germany. OpenAI DALL-E is too expensive at scale. UC3 produces text-based design concepts and professional prompts that designers can use with external image generators (Nano Banana, etc.).
 - **No CRM integration in MVP:** The MVP is a standalone Streamlit app. Production would integrate with RaumKraft's existing CRM and email systems.
 - **No multi-language support:** Listings are generated in German only. Multi-language support is a potential future feature.
 - **No real-time learning:** The system does not learn from agent edits in the MVP phase. Fine-tuning based on feedback is a production consideration.
@@ -95,9 +102,16 @@ CEO Chleo's primary concern: **"AI is not transparent."** Any solution must demo
 | Industry/use case | **KEEP** — same sector, same use cases, expanded scope |
 | UC1 delivery | n8n POC workflow + LangSmith traces | Working Streamlit MVP with editable output |
 | UC2 delivery | Proposed only (data generated, not built) | Working Streamlit MVP with classification + draft response |
-| UC3 delivery | Proposed as future phase | Planned with mood board extension (generative AI) |
-| Data | Synthetic datasets | Real data from Kaggle: Germany Housing - Rent and Price — German real estate sale and rental data with property characteristics (size, rooms, price, location). Sale listings used for UC1 to match RaumKraft's brokerage focus |
-| Monitoring | LangSmith traces (5 runs, no cost) | LangSmith with automatic cost tracking via LangChain |
+| UC3 delivery | Proposed as future phase | Built: brief extraction + per-room prompts + Gemini room analysis + design concept. Image gen blocked in Germany — text concept + exportable prompts as workaround |
+| Data | Synthetic datasets | Real data from Kaggle: [Germany Housing - Rent and Price](https://www.kaggle.com/phanindraparashar/germany-housing-rent-and-price-data-set-apr-20) — German real estate sale and rental data with property characteristics (size, rooms, price, location). Sale listings used for UC1 to match RaumKraft's brokerage focus |
+| Monitoring | LangSmith traces (5 runs, no cost tracking) | LangSmith with automatic per-request API cost tracking via LangChain — shows Chleo exact cost of each AI interaction for full financial transparency |
 | Documentation | Research pack + cost estimation | Full consulting package (ROI, EU AI Act, GDPR, strategy) |
 
-**Decision rationale:** After the Round 1 presentation to teaching staff, the TA confirmed the industry and use cases hold up. The key feedback was that UC1 alone is too simple — UC2 must also be built, and UC3 (mood board) was strongly encouraged to differentiate the project. See `feedback/round1_decision.md` for full details.
+**Decision rationale:** After the Round 1 presentation to teaching staff, the TA confirmed the industry and use cases hold up. Key feedback incorporated into Round 2:
+
+1. **UC1 alone is technically too simple** (~15–20 min task) to justify the capstone — UC2 must also be built as a working capability.
+2. **UC3 mood board extension was strongly encouraged** as it connects the consultant's interior design background with AI skills learned in the bootcamp.
+3. **Real data should replace synthetic data** for portfolio credibility — recruiters may question why open-source data was not used. The Kaggle ImmobilienScout24 dataset was selected as a replacement.
+4. **LangSmith cost tracking** should be added to show Chleo per-request API costs alongside input/output traces.
+
+See `feedback/round1_decision.md` for full feedback details.

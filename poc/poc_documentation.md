@@ -76,7 +76,7 @@ See `langsmith/screenshots/` for trace and evaluation dataset screenshots.
 |---|---|---|
 | Tool | n8n Cloud (no-code) | Streamlit + Python (low-code) |
 | Interface | Webhook only (no UI) | Web app with form inputs and editable output |
-| Use cases | UC1 only (listing generation) | UC1 + UC2 (listing + enquiry triage) |
+| Use cases | UC1 only (listing generation) | UC1 + UC2 + UC3 (listing + enquiry triage + design brief/mood board) |
 | Data | Synthetic (500 properties) | Real-world Kaggle data (Germany Housing dataset) |
 | Output | Raw text response | Editable text area + approve button |
 | Monitoring | LangSmith traces (no cost) | LangSmith traces with automatic cost tracking via LangChain |
@@ -88,8 +88,9 @@ See `langsmith/screenshots/` for trace and evaluation dataset screenshots.
 The n8n POC validated the AI capability but had three gaps the MVP addresses:
 
 1. **No UI for agents** — the POC was only testable via API calls. The MVP gives agents a real interface they can use daily.
-2. **Single use case** — Round 1 feedback confirmed UC1 alone is too simple. The MVP adds UC2 (enquiry triage).
+2. **Single use case** — Round 1 feedback confirmed UC1 alone is too simple. The MVP adds UC2 (enquiry triage) and UC3 (design brief generator with Gemini room analysis).
 3. **No cost visibility** — switching from raw OpenAI client to LangChain enables automatic cost tracking in LangSmith, which strengthens the transparency story for Chleo.
+4. **Multi-model architecture** — MVP integrates both OpenAI GPT-4o-mini (text) and Google Gemini 3.6 Flash (vision), demonstrating a production-realistic multi-provider setup.
 
 ## How to Reproduce the Round 1 POC
 

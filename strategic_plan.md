@@ -74,7 +74,7 @@
 | Item | Detail |
 |---|---|
 | UC3 deployment | Design brief generator for interior design team |
-| Mood board extension | Generative AI for decoration/furniture concepts (nice-to-have) |
+| Mood board extension | Full image generation via Nano Banana API or Gemini from supported region (text-based design concepts already working in MVP) |
 | Advanced features | Batch listing generation, multi-language support, analytics dashboard |
 | Commercialisation | Explore licensing to other German real estate firms |
 
