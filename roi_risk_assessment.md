@@ -137,13 +137,14 @@
 | 6 | **Output quality degradation** — model updates from OpenAI change output quality without notice | Technical | 3 | 3 | 9 | Pin model version (gpt-4o-mini); LangSmith evaluation dataset to benchmark quality after updates; prompt regression tests; human review catches quality drops |
 | 7 | **Vendor lock-in** — dependency on OpenAI as sole LLM provider | Operational | 2 | 3 | 6 | LangChain abstraction layer allows model swapping; evaluate alternatives quarterly (Anthropic Claude, Google Gemini, open-source models); no proprietary fine-tuning in MVP phase |
 | 8 | **Data leakage** — sensitive property or client data exposed through API calls | Ethical | 2 | 5 | 10 | OpenAI data processing terms (no training on API data); EU endpoints; no personally identifiable data in UC1 prompts; UC2 anonymisation layer before API call in production |
+| 9 | **AI image generation geo-restrictions** — Gemini image generation API unavailable in Germany; OpenAI DALL-E too expensive at scale (~€0.04–0.08/image) | Technical | 5 | 2 | 10 | MVP uses Gemini vision for text-based design concepts + generates professional prompts for external image generators (Nano Banana). Production: deploy image generation via server in supported region, or integrate Nano Banana API when pricing stabilises |
 
 ### Risk Heat Map Summary
 
 | | Low Impact (1–2) | Medium Impact (3) | High Impact (4–5) |
 |---|---|---|---|
-| **High Likelihood (4–5)** | — | — | — |
+| **High Likelihood (4–5)** | Image gen geo-restriction (10) | — | — |
 | **Medium Likelihood (3)** | — | Output quality degradation (9) | GDPR non-compliance (15), Staff resistance (12) |
 | **Low Likelihood (1–2)** | — | API cost escalation (6), Vendor lock-in (6) | AI hallucination (10), EU AI Act misclassification (8), Data leakage (10) |
 
-**Overall risk posture:** Manageable. The two highest risks (GDPR and staff resistance) both have clear, actionable mitigations. No risks are in the high-likelihood / high-impact quadrant.
+**Overall risk posture:** Manageable. The two highest risks (GDPR and staff resistance) both have clear, actionable mitigations. The image generation geo-restriction is certain but low-impact — the text-based design concept approach is a viable workaround, and image generation can be routed through a supported region in production. No risks are in the high-likelihood / high-impact quadrant.

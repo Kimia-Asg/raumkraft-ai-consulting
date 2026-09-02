@@ -14,9 +14,11 @@ Both tools keep a human in the loop — AI generates drafts, agents review and a
 | Component | Technology | Why |
 |---|---|---|
 | Frontend | Streamlit | Fast prototyping, Python-only, no frontend code needed |
-| LLM | OpenAI GPT-4o-mini (via LangChain) | Low cost per request, fast response, sufficient quality for text generation |
+| LLM (UC1, UC2, UC3 brief) | OpenAI GPT-4o-mini (via LangChain) | Low cost per request, fast response, sufficient quality for text generation |
+| Vision AI (UC3 design concept) | Google Gemini 3.6 Flash | Free tier, vision capability (analyzes room photos), generates design concepts |
 | LLM Framework | LangChain (`langchain-openai`) | Automatic token counting and cost tracking in LangSmith |
 | Monitoring | LangSmith | Full trace of every AI call — input, output, duration, cost |
+| Deployment | Render (free tier) | Cloud hosting with auto-deploy from GitHub |
 | Language | Python 3.10+ | Industry standard, compatible with all dependencies |
 
 ## Data Source
@@ -70,22 +72,36 @@ The app opens in your browser at `http://localhost:8501`.
 
 These are set automatically via the `.env` file. LangSmith tracing is enabled by default — every AI call is logged to the `raumkraft-mvp` project.
 
-### UC3 — Design Brief Generator (+ Image Prompt Generation)
+### UC3 — Design Brief Generator + Mood Board Concept
 
-**Input:**
-- Meeting notes / consultation transcript (pasted text)
-- Brief language (German or English)
+**Workflow:**
+1. Designer pastes meeting notes from client consultation
+2. AI extracts a structured design brief (rooms, style, budget, timeline, constraints)
+3. AI detects which rooms need redesigning and generates a **per-room image-generation prompt**
+4. Designer uploads a photo of each room
+5. **Google Gemini** analyzes the room photo + brief and produces a **professional text-based design concept** (color palette, furniture, materials, layout recommendations)
+6. The generated prompt + design concept serve as the foundation for the designer to create the mood board and prepare the design document
 
-**Output:**
-- Structured design brief: Room(s), Style Preference, Budget, Timeline, Constraints, Additional Notes
-- Editable text area for designer review
-- Optional: a ready-to-use image-generation prompt (via a second button), built from the extracted brief
+**Output per room:**
+- Tailored image-generation prompt (ready to copy into Nano Banana or similar tool)
+- AI-generated design concept based on actual room photo analysis (color palette, furniture recommendations, materials, constraints addressed)
 
-**MVP scope note:** The mood board concept itself (an actual generated image) is **not implemented** in this MVP — GPT-4o-mini is a text model and does not generate images. What the MVP delivers instead is a **professional, ready-to-use text prompt** that a designer can pair with a photo of the client's room inside an external image generator (e.g. Google Gemini / Nano Banana) to produce the visual concept. Photo upload is not required by the MVP — it happens downstream, in the image generator itself, once the prompt is copied over. This keeps the MVP scoped to what GPT-4o-mini can actually do, while still proving the full UC3 concept end-to-end (notes → brief → image-ready prompt).
+**Obstacles encountered during development:**
+
+1. **Google Gemini image generation is not available in Germany via API.** Gemini's image generation feature is geo-restricted and does not support Germany at this time. As a result, the MVP uses Gemini's **vision + text** capability instead — Gemini sees the room photo, analyzes it, and produces a detailed text-based design concept. In production, image generation could be enabled via a server in a supported region, or by using an alternative provider.
+
+2. **OpenAI DALL-E is too expensive for this use case.** OpenAI charges ~$0.04–0.08 per image, which at scale (multiple rooms per client, multiple clients per month) would significantly impact running costs. This does not align with RaumKraft's cost-conscious approach.
+
+3. **Chosen approach:** Instead of generating images directly, the MVP produces professional, ready-to-use prompts that designers can copy into **Nano Banana** or any external image generator. Combined with Gemini's text-based design concept (which analyzes the actual room photo), the designer has everything needed to create the mood board and prepare the design document. This is a practical, cost-effective solution that keeps the designer in creative control.
+
+**Tech stack for UC3:**
+- GPT-4o-mini: brief extraction + prompt generation
+- Google Gemini 3.6 Flash: room photo analysis + design concept generation
 
 **System prompt constraints:**
 - Extraction: uses ONLY information present in the notes; missing fields marked "Not specified," never guessed
-- Image prompt: single, ready-to-use paragraph (80–120 words), respects budget tier and constraints, instructs the image generator to preserve room architecture
+- Per-room prompts: tailored to each room's specific requirements from the brief
+- Design concept: references what Gemini actually sees in the uploaded photo
 
 ## Features
 
@@ -148,15 +164,18 @@ This is the transparency layer for CEO Chleo — proof that AI is not a black bo
 | Publishing | Copy text manually | Direct CMS/portal integration |
 | Authentication | None | Role-based access (agent, manager, admin) |
 | Storage | No history saved | Database for all generated listings and triage decisions |
-| Multi-language | German only (UC1), German/English (UC2) | Full multi-language support |
+| Multi-language | German only (UC1), German/English (UC2, UC3) | Full multi-language support |
 | Batch processing | One at a time | Bulk listing generation |
+| Image generation (UC3) | Text-based design concept + prompt for external tool (Gemini image gen unavailable in Germany; DALL-E too expensive) | Dedicated image generation via Nano Banana API or Gemini from supported region |
 | Error handling | Basic (missing field warnings) | Comprehensive error handling, retry logic, fallback models |
-| Scalability | Single user, local | Cloud-deployed, multi-user, load-balanced |
+| Scalability | Single user, local + Render deployment | Cloud-deployed, multi-user, load-balanced |
 
 ## Cost per Request
 
 Using GPT-4o-mini pricing:
 - UC1 listing generation: ~€0.001–0.002 per listing (short input, ~200 word output)
 - UC2 enquiry triage: ~€0.001 per enquiry (short input, ~120 word output)
+- UC3 brief extraction + prompt generation: ~€0.002–0.004 per session (two GPT calls: brief + per-room prompts)
+- UC3 design concept (Gemini): Free tier — Google Gemini 3.6 Flash (15 req/min free)
 
-At 200 listings/month + 1,200 enquiries/month = estimated **€1.40–2.60/month** in API costs.
+At 200 listings/month + 1,200 enquiries/month + 23 design projects/month = estimated **€2–4/month** in API costs.

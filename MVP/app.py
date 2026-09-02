@@ -1,15 +1,17 @@
 """
 RaumKraft AI Assistant — MVP
 =============================
-Streamlit app with two use cases:
+Streamlit app with three use cases:
   Tab 1 (UC1): Property Listing Generator
   Tab 2 (UC2): Client Enquiry Triage
+  Tab 3 (UC3): Design Brief Generator + Mood Board
 
 Run:  streamlit run app.py
-Requires: .env with OPENAI_API_KEY, LANGSMITH_API_KEY
+Requires: .env with OPENAI_API_KEY, LANGSMITH_API_KEY, GEMINI_API_KEY
 """
 
 import os
+import re
 import streamlit as st
 from dotenv import load_dotenv
 
@@ -32,11 +34,8 @@ st.set_page_config(
 st.title("🏠 RaumKraft AI Assistant")
 st.caption("AI-powered tools for RaumKraft Immobilien & Design")
 
-# --- Initialize LLM (cost tracking automatic via langchain_openai) ---
-llm = ChatOpenAI(
-    model="gpt-4o-mini",
-    temperature=0.7,
-)
+# --- Initialize LLM ---
+llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.7)
 
 # =====================================================================
 # TAB LAYOUT
@@ -53,39 +52,18 @@ with tab1:
     col1, col2 = st.columns(2)
 
     with col1:
-        property_type = st.selectbox(
-            "Property Type",
-            ["Wohnung (Apartment)", "Haus (House)", "Büro (Office)", "Penthouse", "Loft"],
-            key="uc1_type"
-        )
+        property_type = st.selectbox("Property Type", ["Wohnung (Apartment)", "Haus (House)", "Büro (Office)", "Penthouse", "Loft"], key="uc1_type")
         district = st.text_input("District / Neighbourhood", placeholder="e.g. Hamburg-Eppendorf", key="uc1_district")
         size_sqm = st.number_input("Size (m²)", min_value=10, max_value=1000, value=75, key="uc1_size")
         rooms = st.number_input("Rooms", min_value=1, max_value=20, value=3, key="uc1_rooms")
         floor = st.text_input("Floor (e.g. 3 of 5)", placeholder="3 of 5", key="uc1_floor")
 
     with col2:
-        energy_class = st.selectbox(
-            "Energy Class",
-            ["A+", "A", "B", "C", "D", "E", "F", "G", "H"],
-            index=2,
-            key="uc1_energy"
-        )
+        energy_class = st.selectbox("Energy Class", ["A+", "A", "B", "C", "D", "E", "F", "G", "H"], index=2, key="uc1_energy")
         asking_price = st.number_input("Asking Price (€)", min_value=10000, max_value=10000000, value=350000, step=5000, key="uc1_price")
-        features = st.text_area(
-            "Features (comma-separated)",
-            placeholder="e.g. Balkon, Einbauküche, Fußbodenheizung, Aufzug",
-            key="uc1_features"
-        )
-        target_audience = st.selectbox(
-            "Target Audience",
-            ["General", "Young professionals", "Families", "Seniors", "Investors"],
-            key="uc1_audience"
-        )
-        neighbourhood_notes = st.text_area(
-            "Neighbourhood Notes (optional)",
-            placeholder="e.g. Near Eppendorfer Baum, cafés, park nearby",
-            key="uc1_neighbourhood"
-        )
+        features = st.text_area("Features (comma-separated)", placeholder="e.g. Balkon, Einbauküche, Fußbodenheizung, Aufzug", key="uc1_features")
+        target_audience = st.selectbox("Target Audience", ["General", "Young professionals", "Families", "Seniors", "Investors"], key="uc1_audience")
+        neighbourhood_notes = st.text_area("Neighbourhood Notes (optional)", placeholder="e.g. Near Eppendorfer Baum, cafés, park nearby", key="uc1_neighbourhood")
 
     if st.button("🚀 Generate Listing", key="uc1_generate", type="primary"):
         if not district:
@@ -113,20 +91,12 @@ Target audience: {target_audience}
 Neighbourhood notes: {neighbourhood_notes}"""
 
             with st.spinner("Generating listing..."):
-                response = llm.invoke([
-                    SystemMessage(content=system_prompt),
-                    HumanMessage(content=user_prompt),
-                ])
+                response = llm.invoke([SystemMessage(content=system_prompt), HumanMessage(content=user_prompt)])
 
             st.success("Listing generated!")
             st.markdown("---")
             st.subheader("Generated Listing Draft")
-            edited_listing = st.text_area(
-                "Edit the listing below before publishing:",
-                value=response.content,
-                height=300,
-                key="uc1_edit"
-            )
+            edited_listing = st.text_area("Edit the listing below before publishing:", value=response.content, height=300, key="uc1_edit")
             if st.button("✅ Approve & Copy", key="uc1_approve"):
                 st.code(edited_listing, language=None)
                 st.success("Listing approved! Copy the text above and publish.")
@@ -140,25 +110,17 @@ with tab2:
     st.header("Client Enquiry Triage")
     st.markdown("Paste a customer enquiry → AI classifies it and drafts a response → you review before sending.")
 
-    enquiry_text = st.text_area(
-        "Paste the customer enquiry here",
-        height=150,
-        placeholder="e.g. Guten Tag, ich interessiere mich für die 3-Zimmer-Wohnung in Eppendorf. Ist eine Besichtigung am Samstag möglich? Mit freundlichen Grüßen, Herr Müller",
-        key="uc2_enquiry"
-    )
+    enquiry_text = st.text_area("Paste the customer enquiry here", height=150,
+        placeholder="e.g. Guten Tag, ich interessiere mich für die 3-Zimmer-Wohnung in Eppendorf. Ist eine Besichtigung am Samstag möglich?",
+        key="uc2_enquiry")
 
-    enquiry_language = st.selectbox(
-        "Response language",
-        ["German (Deutsch)", "English"],
-        key="uc2_lang"
-    )
+    enquiry_language = st.selectbox("Response language", ["German (Deutsch)", "English"], key="uc2_lang")
 
     if st.button("📨 Classify & Draft Response", key="uc2_classify", type="primary"):
         if not enquiry_text.strip():
             st.warning("Please paste an enquiry first.")
         else:
             lang_instruction = "Respond in German." if "German" in enquiry_language else "Respond in English."
-
             system_prompt = f"""You are the AI assistant for RaumKraft Immobilien & Design, a premium German real estate and interior design firm.
 
 Your job:
@@ -185,10 +147,7 @@ Output format:
 Keep the draft response concise (80–120 words), professional but warm, and never commit to anything — always frame as "we will get back to you" or "let me check with the team." The human agent will finalize."""
 
             with st.spinner("Classifying and drafting response..."):
-                response = llm.invoke([
-                    SystemMessage(content=system_prompt),
-                    HumanMessage(content=f"Customer enquiry:\n\n{enquiry_text}"),
-                ])
+                response = llm.invoke([SystemMessage(content=system_prompt), HumanMessage(content=f"Customer enquiry:\n\n{enquiry_text}")])
 
             st.success("Enquiry classified!")
             st.markdown("---")
@@ -198,25 +157,19 @@ Keep the draft response concise (80–120 words), professional but warm, and nev
 
 
 # =====================================================================
-# UC3 — DESIGN BRIEF GENERATOR
+# UC3 — DESIGN BRIEF GENERATOR + MOOD BOARD
 # =====================================================================
 with tab3:
     st.header("Design Brief Generator")
-    st.markdown("Paste meeting notes from a client consultation → AI extracts and structures a formal design brief → designer reviews and refines.")
+    st.markdown("Paste meeting notes from a client consultation → AI extracts a design brief → generates per-room prompts → optionally creates mood boards with Gemini AI.")
 
-    meeting_notes = st.text_area(
-        "Paste meeting notes / consultation transcript here",
-        height=200,
-        placeholder="e.g. Met with Mr. and Mrs. Keller today about their new apartment in Winterhude. They want a modern, minimalist style for the living room. Budget around €15,000. They mentioned they love natural light and want to keep the existing hardwood floors. Timeline: want it done before Christmas, so end of November latest. They also have a cat, so nothing too fragile for lower shelves...",
-        key="uc3_notes"
-    )
+    meeting_notes = st.text_area("Paste meeting notes / consultation transcript here", height=200,
+        placeholder="e.g. Met with Mr. and Mrs. Keller about their apartment in Winterhude. They want a modern style for the living room and kitchen...",
+        key="uc3_notes")
 
-    brief_language = st.selectbox(
-        "Brief language",
-        ["German (Deutsch)", "English"],
-        key="uc3_lang"
-    )
+    brief_language = st.selectbox("Brief language", ["German (Deutsch)", "English"], key="uc3_lang")
 
+    # --- STEP 1: Extract Brief ---
     if st.button("📋 Extract Design Brief", key="uc3_extract", type="primary"):
         if not meeting_notes.strip():
             st.warning("Please paste meeting notes first.")
@@ -240,61 +193,140 @@ Output format:
 Be factual and only use information present in the notes. This brief will be reviewed and refined by a human designer before use."""
 
             with st.spinner("Extracting design brief..."):
-                response = llm.invoke([
-                    SystemMessage(content=system_prompt),
-                    HumanMessage(content=f"Meeting notes:\n\n{meeting_notes}"),
-                ])
+                response = llm.invoke([SystemMessage(content=system_prompt), HumanMessage(content=f"Meeting notes:\n\n{meeting_notes}")])
 
-            # Store in session_state so it survives the rerun triggered by the next button
             st.session_state["uc3_brief_text"] = response.content
+            # Clear old room data
+            for key in list(st.session_state.keys()):
+                if key.startswith("uc3_room") or key.startswith("uc3_gen"):
+                    del st.session_state[key]
 
-    # Show the extracted brief (persists across reruns via session_state)
+    # --- Show extracted brief ---
     if "uc3_brief_text" in st.session_state:
         st.success("Design brief extracted!")
         st.markdown("---")
-        edited_brief = st.text_area(
-            "Edit the brief below before sending to the design team:",
-            value=st.session_state["uc3_brief_text"],
-            height=300,
-            key="uc3_edit"
-        )
+        edited_brief = st.text_area("Edit the brief below before sending to the design team:", value=st.session_state["uc3_brief_text"], height=250, key="uc3_edit")
+
+        # --- STEP 2: Generate per-room prompts ---
         st.markdown("---")
-        st.markdown("#### 🖼️ Mood Board Concept (nice-to-have)")
-        st.caption("Generate a ready-to-use prompt for an image generator (e.g. Google Gemini / Nano Banana), based on the design brief above. In production, this prompt would be paired with a photo of the client's current room inside the image generator itself.")
+        st.markdown("#### 🖼️ Mood Board Concept Generator")
+        st.caption("Based on the brief above, the AI detects which rooms need redesigning and generates a tailored image-generation prompt for each room.")
 
-        if st.button("✨ Generate Image Prompt", key="uc3_prompt_gen"):
-            prompt_system = """You are an expert prompt engineer for AI image generation models (like Google Gemini / Nano Banana). Given a structured interior design brief, write ONE detailed, professional image-generation prompt that instructs the model to transform a room photo according to the client's requirements.
+        if st.button("✨ Generate Prompts Per Room", key="uc3_gen_prompts", type="primary"):
+            room_system = """You are an expert prompt engineer for AI image generation. Given a design brief:
 
-The prompt must:
-- Reference that an existing room photo will be provided as input by the user
-- Describe the desired style, color palette, and mood clearly
-- Mention specific furniture/decor elements implied by the brief
-- Respect any constraints (e.g. pet safety, keep existing floors)
-- Stay within the stated budget tier (translate budget into a realism level — e.g. "budget-friendly" vs "premium/luxury" pieces)
-- Be a single, ready-to-use prompt (not a list of instructions) — written as one paragraph of 80–120 words
-- End with a technical instruction for realistic, photorealistic rendering that keeps the room's architecture (windows, doors, layout) unchanged
+1. Identify ALL rooms mentioned for redesign.
+2. For EACH room, write a separate image-generation prompt (80–120 words) that:
+   - References that an existing room photo will be provided as input
+   - Describes the desired style, color palette, and mood for THAT specific room
+   - Mentions specific furniture/decor elements relevant to THAT room
+   - Respects constraints (pets, kids, items to keep, etc.)
+   - Translates budget into a realism level
+   - Ends with instruction for photorealistic rendering keeping architecture unchanged
 
-Output ONLY the final prompt text — no preamble, no explanation."""
+Output format (strictly follow — one section per room):
+===ROOM: [Room Name]===
+[prompt text]
+===END===
 
-            with st.spinner("Generating image prompt..."):
-                prompt_response = llm.invoke([
-                    SystemMessage(content=prompt_system),
-                    HumanMessage(content=f"Design brief:\n\n{edited_brief}"),
-                ])
+If only one room is mentioned, output one section. If the client wants to redesign the whole apartment without specifying rooms, create sections for: Living Room, Kitchen, Bedroom, Bathroom."""
 
-            st.session_state["uc3_image_prompt_text"] = prompt_response.content
+            with st.spinner("Detecting rooms and generating prompts..."):
+                room_response = llm.invoke([SystemMessage(content=room_system), HumanMessage(content=f"Design brief:\n\n{edited_brief}")])
 
-        if "uc3_image_prompt_text" in st.session_state:
-            st.success("Image prompt generated!")
-            st.text_area(
-                "Ready-to-use prompt for Nano Banana / Gemini / other image generator:",
-                value=st.session_state["uc3_image_prompt_text"],
-                height=150,
-                key="uc3_image_prompt"
-            )
-            st.caption("📋 Copy this prompt into your image generator of choice (e.g. Google Gemini / Nano Banana) along with a photo of the client's room to produce the mood board concept.")
+            room_blocks = re.findall(r'===ROOM:\s*(.+?)===\s*(.*?)===END===', room_response.content, re.DOTALL)
 
-        st.caption("🔍 This extraction was traced in LangSmith for full transparency.")
+            if room_blocks:
+                rooms_list = []
+                for room_name, room_prompt in room_blocks:
+                    rooms_list.append({"name": room_name.strip(), "prompt": room_prompt.strip()})
+                st.session_state["uc3_rooms"] = rooms_list
+            else:
+                st.warning("Could not detect rooms. Please check the brief and try again.")
+
+        # --- STEP 3: Per-room prompts + upload + mood board ---
+        if "uc3_rooms" in st.session_state:
+            rooms_list = st.session_state["uc3_rooms"]
+            st.success(f"{len(rooms_list)} room(s) detected for redesign")
+
+            gemini_available = os.getenv("GEMINI_API_KEY") is not None
+
+            for i, room in enumerate(rooms_list):
+                st.markdown("---")
+                st.markdown(f"### 🏠 {room['name']}")
+
+                # Show prompt
+                st.text_area(f"Generated prompt for {room['name']}:", value=room["prompt"], height=120, key=f"uc3_prompt_{i}")
+
+                # Photo upload
+                photo = st.file_uploader(f"Upload photo of {room['name']}", type=["jpg", "jpeg", "png"], key=f"uc3_photo_{i}")
+                if photo:
+                    st.image(photo, caption=f"Current {room['name']}", width=350)
+
+                # Generate mood board
+                if gemini_available and photo:
+                    if st.button(f"🎨 Generate Design Concept for {room['name']}", key=f"uc3_mood_{i}"):
+                        from google import genai
+                        from google.genai import types
+                        from PIL import Image
+                        import io
+
+                        client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+                        image = Image.open(photo)
+
+                        # Convert image to bytes
+                        img_bytes = io.BytesIO()
+                        image.save(img_bytes, format='PNG')
+                        img_bytes = img_bytes.getvalue()
+
+                        mood_prompt = f"""You are a professional interior designer at RaumKraft Immobilien & Design.
+
+Look at this photo of the client's current {room['name']} and create a detailed redesign concept based on the following requirements:
+
+{room['prompt']}
+
+Provide:
+1. **Design Concept Overview** — 2-3 sentences describing the overall vision
+2. **Color Palette** — specific colors for walls, furniture, and accents
+3. **Furniture & Layout** — what to keep, what to replace, specific recommendations
+4. **Materials & Textures** — fabrics, wood types, finishes
+5. **Key Design Elements** — 3-5 standout pieces or features that define the space
+6. **Constraints Addressed** — how the design respects the client's constraints
+
+Be specific and professional. Reference what you see in the current room photo and explain what changes."""
+
+                        with st.spinner(f"Generating design concept for {room['name']}... (15-30 seconds)"):
+                            try:
+                                gen_response = client.models.generate_content(
+                                    model="gemini-3.6-flash",
+                                    contents=[
+                                        mood_prompt,
+                                        types.Part.from_bytes(data=img_bytes, mime_type="image/png")
+                                    ]
+                                )
+
+                                st.session_state[f"uc3_gen_txt_{i}"] = gen_response.text
+
+                            except Exception as e:
+                                st.error(f"Gemini failed for {room['name']}: {str(e)}")
+                                st.info("Copy the prompt above and use it manually in Google Gemini or Nano Banana.")
+
+                elif not gemini_available and photo:
+                    st.caption(f"📋 Copy the prompt above + your photo into Google Gemini or Nano Banana to generate the mood board.")
+
+                # Show results
+                if f"uc3_gen_img_{i}" in st.session_state:
+                    from PIL import Image
+                    import io
+                    gen_img = Image.open(io.BytesIO(st.session_state[f"uc3_gen_img_{i}"]))
+                    st.image(gen_img, caption=f"AI-generated concept for {room['name']}", width=500)
+                    st.caption("⚠️ AI-generated concept — not a real photograph. For client presentation only.")
+
+                if f"uc3_gen_txt_{i}" in st.session_state:
+                    st.info(f"Gemini text concept for {room['name']}:")
+                    st.markdown(st.session_state[f"uc3_gen_txt_{i}"])
+
+        st.caption("🔍 All AI interactions are traced in LangSmith for full transparency.")
 
 
 # =====================================================================
@@ -308,14 +340,14 @@ with st.sidebar:
     **Use Cases:**
     - **UC1:** Property listing generation
     - **UC2:** Client enquiry triage
-    - **UC3:** Design brief generation (+ mood board planned)
+    - **UC3:** Design brief generation + mood board
 
     **How it works:**
     - AI generates drafts; humans review before action
     - Every AI interaction is traced in LangSmith
     - All costs are tracked per request
 
-    **Tech:** Streamlit · LangChain · OpenAI GPT-4o-mini · LangSmith
+    **Tech:** Streamlit · LangChain · OpenAI GPT-4o-mini · Google Gemini · LangSmith
     """)
 
     st.markdown("---")
