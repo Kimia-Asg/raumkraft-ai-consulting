@@ -70,6 +70,23 @@ The app opens in your browser at `http://localhost:8501`.
 
 These are set automatically via the `.env` file. LangSmith tracing is enabled by default — every AI call is logged to the `raumkraft-mvp` project.
 
+### UC3 — Design Brief Generator (+ Image Prompt Generation)
+
+**Input:**
+- Meeting notes / consultation transcript (pasted text)
+- Brief language (German or English)
+
+**Output:**
+- Structured design brief: Room(s), Style Preference, Budget, Timeline, Constraints, Additional Notes
+- Editable text area for designer review
+- Optional: a ready-to-use image-generation prompt (via a second button), built from the extracted brief
+
+**MVP scope note:** The mood board concept itself (an actual generated image) is **not implemented** in this MVP — GPT-4o-mini is a text model and does not generate images. What the MVP delivers instead is a **professional, ready-to-use text prompt** that a designer can pair with a photo of the client's room inside an external image generator (e.g. Google Gemini / Nano Banana) to produce the visual concept. Photo upload is not required by the MVP — it happens downstream, in the image generator itself, once the prompt is copied over. This keeps the MVP scoped to what GPT-4o-mini can actually do, while still proving the full UC3 concept end-to-end (notes → brief → image-ready prompt).
+
+**System prompt constraints:**
+- Extraction: uses ONLY information present in the notes; missing fields marked "Not specified," never guessed
+- Image prompt: single, ready-to-use paragraph (80–120 words), respects budget tier and constraints, instructs the image generator to preserve room architecture
+
 ## Features
 
 ### UC1 — Property Listing Generator
