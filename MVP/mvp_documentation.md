@@ -88,7 +88,20 @@ These are set automatically via the `.env` file. LangSmith tracing is enabled by
 
 **Obstacles encountered during development:**
 
-1. **Google Gemini image generation is not available in Germany via API.** Gemini's image generation feature is geo-restricted and does not support Germany at this time. As a result, the MVP uses Gemini's **vision + text** capability instead — Gemini sees the room photo, analyzes it, and produces a detailed text-based design concept. In production, image generation could be enabled via a server in a supported region, or by using an alternative provider.
+1. **Gemini image generation was attempted across four model versions, each returning a different error.** Full account, for transparency:
+
+   | Model attempted | Error received | What it means |
+   |---|---|---|
+   | `gemini-2.0-flash-exp` | `404` — model not found for API version v1beta | Model deprecated/renamed since our initial research |
+   | `gemini-2.5-flash` | `404` — "no longer available to new users," recommends `gemini-3.6-flash` | Model retired; Google actively redirects to newer version |
+   | `gemini-3.6-flash` (image request) | `400 FAILED_PRECONDITION` — "Image generation is not available in your country" | A country-level restriction, distinct from a quota/billing error |
+   | `gemini-2.5-flash-image` ("Nano Banana") | `429 RESOURCE_EXHAUSTED` — free tier quota limit: 0 for this model | This specific API key/project has zero free-tier allowance for this model — a quota/billing issue, not a country restriction |
+
+   **What we could not fully verify:** whether a paid Google Cloud billing account would resolve the country-restriction error (Model 3) versus the quota error (Model 4) — these are two different failure types, and Google's documentation does not clearly state whether enabling billing lifts the country restriction specifically. Testing this would require enabling paid billing, which was out of scope for a time-boxed capstone MVP.
+
+   **Decision:** Given the deadline and the ambiguity around whether paid billing would resolve the issue, we reverted to `gemini-3.6-flash`'s **vision + text** capability, which reliably works: Gemini sees the room photo, analyzes it against the brief, and produces a detailed text-based design concept (color palette, furniture, materials, layout). This is a deliberate, honest trade-off — not a workaround we're hiding. It still proves the end-to-end concept (notes → brief → per-room prompt → photo analysis → design direction) without over-promising image generation that could not be reliably demonstrated live.
+
+   In production, next steps would be: (a) test with paid billing enabled to isolate whether the country restriction lifts, (b) evaluate Nano Banana's own consumer product/API terms directly, or (c) use the generated per-room prompts with an external tool the designer controls.
 
 2. **OpenAI DALL-E is too expensive for this use case.** OpenAI charges ~$0.04–0.08 per image, which at scale (multiple rooms per client, multiple clients per month) would significantly impact running costs. This does not align with RaumKraft's cost-conscious approach.
 

@@ -67,7 +67,7 @@ Customer Enquiry (email / contact form)
 
 **GDPR exposure: MEDIUM** — Customer enquiries may contain personal data (name, email, phone number, address). This data flows through OpenAI and is logged in LangSmith.
 
-### UC3 — Design Brief Generator (Future)
+### UC3 — Design Brief Generator + Mood Board (Built)
 
 **Core function:** Meeting notes → structured design brief
 
@@ -92,27 +92,38 @@ Meeting Notes (text from client consultation)
 └─────────────────────┘
 ```
 
-**Nice-to-have extension:** Mood board concept generator
+**Built: Per-room prompt generation + Gemini design concept**
 
 ```
-Structured Brief + Room Photo
+Structured Brief (rooms detected)
         │
         ▼
 ┌─────────────────────┐
-│  Streamlit App      │  Designer uploads room photo
+│  OpenAI API          │  Generates tailored image
+│  (EU endpoint)       │  prompt per detected room
+└─────────┬───────────┘
+          │
+          ▼
+┌─────────────────────┐
+│  Streamlit App       │  Designer uploads photo
+│                      │  of each specific room
 └─────────┬───────────┘
           │ API call (HTTPS, encrypted)
           ▼
 ┌─────────────────────┐
-│  Generative AI      │  Returns 2 decoration/furniture
-│  (provider TBD)     │  concept ideas
-└─────────┬───────────┘
-          │ Response
+│  Google Gemini API   │  Analyzes room photo + brief
+│  (3.6 Flash, US)     │  → text-based design concept
+└─────────┬───────────┘  (image generation unavailable
+          │              in Germany — see note below)
           ▼
 ┌─────────────────────┐
-│  Streamlit App      │  Client picks preferred option
+│  Streamlit App       │  Designer reviews concept +
+│                      │  uses prompt with external
+│                      │  image generator (Nano Banana)
 └─────────────────────┘
 ```
+
+**Note on Gemini processing:** Google Gemini's image generation API is not available in Germany. The MVP uses Gemini's vision + text capability instead — the room photo is sent to Gemini (US-hosted), analyzed, and a text-based design concept is returned. No image is generated or stored by Gemini in this flow.
 
 **GDPR exposure: MEDIUM** — Meeting notes may contain client names and personal preferences. Room photos may incidentally contain personal items. Design briefs reference client-specific details.
 
@@ -123,7 +134,7 @@ Structured Brief + Room Photo
 | 1 | Property listing generation (UC1) | Property data (address, size, price, features) | None (no personal data) | Generate marketing content for property sales | Art. 6(1)(f) — Legitimate interest | Session only — not stored after generation | OpenAI (processor), LangSmith (sub-processor) |
 | 2 | Enquiry classification and draft response (UC2) | Customer name, email, phone, address, enquiry content | Prospective buyers, tenants, clients | Classify and respond to customer enquiries efficiently | Art. 6(1)(f) — Legitimate interest in efficient customer service | Session only in MVP; production: per retention policy (max 30 days in AI system) | OpenAI (processor), LangSmith (sub-processor) |
 | 3 | AI interaction monitoring (LangSmith) | Input prompts, output text, metadata (tokens, cost, duration) | Indirectly: customers whose enquiry data appears in traces | Transparency, quality assurance, cost tracking | Art. 6(1)(f) — Legitimate interest in system oversight | 90 days (configurable) | LangSmith / LangChain Inc. (processor, US-based) |
-| 4 | Design brief generation + mood board (UC3, future) | Meeting notes (may contain client name, preferences), room photos, design preferences | Interior design clients | Extract structured brief from meeting notes; generate design concept options | Art. 6(1)(b) — Performance of contract (design service) | Session only; briefs and concepts retained if client approves | OpenAI (processor for brief extraction), generative AI provider TBD (processor for mood board) |
+| 4 | Design brief generation + mood board concept (UC3) | Meeting notes (may contain client name, preferences), room photos, design preferences | Interior design clients | Extract structured brief; generate per-room image prompts; analyze room photo to produce text-based design concept | Art. 6(1)(b) — Performance of contract (design service) | Session only; briefs and concepts retained if client approves | OpenAI (processor for brief extraction and prompts), Google (processor for Gemini room photo analysis, US-based) |
 
 ## 3. Data Protection Impact Assessment (DPIA) — UC2 Enquiry Triage
 
@@ -203,9 +214,18 @@ Under GDPR, individuals whose data is processed have the following rights. Here 
 
 | Third Party | Role | Data Transferred | Location | Transfer Mechanism |
 |---|---|---|---|---|
-| **OpenAI** (OpenAI LP) | Data processor | UC1: property data (no personal data). UC2: customer enquiry text (may contain personal data) | EU endpoint (data processed in EU) | Data Processing Agreement (DPA) via OpenAI's standard terms. Zero data retention policy for API calls |
+| **OpenAI** (OpenAI LP) | Data processor | UC1: property data (no personal data). UC2: customer enquiry text (may contain personal data). UC3: design brief text | EU endpoint (data processed in EU) | Data Processing Agreement (DPA) via OpenAI's standard terms. Zero data retention policy for API calls |
+| **Google** (Gemini API) | Data processor | UC3: room photos (may incidentally show personal items) + design brief context, for photo analysis | US-hosted (Gemini API — no EU endpoint currently available for this feature) | Google Cloud Data Processing Addendum. Standard Contractual Clauses (SCCs) apply for EU-US transfer |
 | **LangChain Inc.** (LangSmith) | Sub-processor | AI interaction traces: input prompts, outputs, metadata | US-hosted | Standard Contractual Clauses (SCCs) required. PII redaction recommended before logging |
 | **Streamlit / Cloud provider** (production) | Infrastructure | Application data in transit | EU (planned) | EU-hosted deployment. No cross-border transfer |
+
+### Safeguards for US Transfers (Gemini)
+
+- Google Cloud Data Processing Addendum governs Gemini API usage
+- Standard Contractual Clauses (SCCs) as the transfer mechanism
+- Room photos are processed transiently for analysis — not stored by RaumKraft or retained by Google beyond the API call per Google's stated policy
+- Recommendation: obtain explicit client consent before uploading room photos, noting the photo will be analyzed by a US-based AI service
+- This is flagged as a residual risk in `roi_risk_assessment.md` (Risk #9) — production deployment should route this through an EU-supported service or provider once available
 
 ### Safeguards for US Transfers (LangSmith)
 
