@@ -31,8 +31,162 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("🏠 RaumKraft AI Assistant")
-st.caption("AI-powered tools for RaumKraft Immobilien & Design")
+# --- Brand theme: fonts, colors, component styling ---
+st.markdown("""
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Manrope', -apple-system, sans-serif;
+}
+
+:root {
+    --navy-950: #0D1526;
+    --navy-900: #131B2E;
+    --navy-800: #182238;
+    --navy-700: #2A3654;
+    --copper-500: #C9744A;
+    --copper-400: #DB8A5F;
+    --cream-100: #F2EDE4;
+    --slate-400: #93A0B8;
+}
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+    background-color: var(--navy-900);
+    border-right: 1px solid var(--navy-700);
+}
+[data-testid="stSidebar"] h3 {
+    color: var(--copper-500);
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+    border-bottom: 1px solid var(--navy-700);
+    padding-bottom: 0.5rem;
+    margin-top: 1.5rem;
+}
+[data-testid="stSidebar"] p, [data-testid="stSidebar"] li {
+    color: var(--slate-400);
+    font-size: 0.88rem;
+    line-height: 1.5;
+}
+[data-testid="stSidebar"] strong {
+    color: var(--cream-100);
+}
+[data-testid="stSidebar"] a {
+    color: var(--copper-400);
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: var(--cream-100);
+    font-weight: 800;
+    letter-spacing: -0.01em;
+}
+
+/* Tabs */
+[data-testid="stTabs"] button[data-baseweb="tab"] {
+    color: var(--slate-400);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+[data-testid="stTabs"] button[aria-selected="true"] {
+    color: var(--copper-500);
+}
+[data-testid="stTabs"] [data-baseweb="tab-highlight"] {
+    background-color: var(--copper-500);
+}
+[data-testid="stTabs"] [data-baseweb="tab-border"] {
+    background-color: var(--navy-700);
+}
+
+/* Buttons */
+.stButton button, [data-testid="stBaseButton-primary"] {
+    background-color: var(--copper-500);
+    color: var(--cream-100);
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    transition: background-color 0.15s ease;
+}
+.stButton button:hover, [data-testid="stBaseButton-primary"]:hover {
+    background-color: var(--copper-400);
+    color: var(--cream-100);
+}
+
+/* Inputs */
+.stTextInput input, .stTextArea textarea, .stNumberInput input,
+[data-baseweb="select"] > div {
+    background-color: var(--navy-800) !important;
+    border: 1px solid var(--navy-700) !important;
+    border-radius: 6px !important;
+    color: var(--cream-100) !important;
+}
+.stTextInput input:focus, .stTextArea textarea:focus, .stNumberInput input:focus {
+    border-color: var(--copper-500) !important;
+    box-shadow: 0 0 0 1px var(--copper-500) !important;
+}
+
+/* Labels */
+[data-testid="stWidgetLabel"] p {
+    color: var(--slate-400);
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+/* Alert boxes (success / info / warning / error) */
+[data-testid="stAlert"] {
+    border-radius: 6px;
+    border-left: 3px solid var(--copper-500);
+    background-color: var(--navy-800);
+}
+
+/* Dividers */
+hr {
+    border-color: var(--navy-700);
+}
+
+/* Custom header */
+.rk-header {
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    margin-bottom: 0.1rem;
+}
+.rk-mark {
+    display: inline-block;
+    width: 8px;
+    height: 28px;
+    background-color: var(--copper-500);
+    border-radius: 2px;
+}
+.rk-title {
+    font-size: 2.1rem;
+    font-weight: 800;
+    color: var(--cream-100);
+    letter-spacing: -0.01em;
+}
+.rk-title span {
+    font-weight: 500;
+    color: var(--slate-400);
+}
+.rk-subtitle {
+    color: var(--slate-400);
+    font-size: 0.95rem;
+    margin-top: 0.2rem;
+    margin-bottom: 1.5rem;
+}
+</style>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+<div class="rk-header">
+    <span class="rk-mark"></span>
+    <span class="rk-title">RaumKraft<span> AI Assistant</span></span>
+</div>
+<div class="rk-subtitle">AI-powered tools for RaumKraft Immobilien & Design</div>
+""", unsafe_allow_html=True)
 
 # --- Initialize LLM ---
 llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.7)
@@ -346,9 +500,30 @@ with st.sidebar:
     - AI generates drafts; humans review before action
     - Every AI interaction is traced in LangSmith
     - All costs are tracked per request
-
-    **Tech:** Streamlit · LangChain · OpenAI GPT-4o-mini · Google Gemini · LangSmith
     """)
+
+    st.markdown("""
+    <style>
+    .rk-pill {
+        display: inline-block;
+        background-color: var(--navy-800);
+        border: 1px solid var(--navy-700);
+        color: var(--slate-400);
+        font-size: 0.75rem;
+        font-weight: 600;
+        padding: 3px 10px;
+        border-radius: 999px;
+        margin: 2px 4px 2px 0;
+    }
+    </style>
+    <div style="margin-top: 0.5rem;">
+        <span class="rk-pill">Streamlit</span>
+        <span class="rk-pill">LangChain</span>
+        <span class="rk-pill">GPT-4o-mini</span>
+        <span class="rk-pill">Gemini</span>
+        <span class="rk-pill">LangSmith</span>
+    </div>
+    """, unsafe_allow_html=True)
 
     st.markdown("---")
     st.markdown("### Transparency")
